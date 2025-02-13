@@ -1,0 +1,223 @@
+INFO - 2024-07-26 08:29:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 08:29:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 08:30:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 08:30:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 08:30:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 08:31:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-26 08:31:00 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$jumlah
+in APPPATH\Controllers\ReportHunian.php on line 62.
+ 1 APPPATH\Controllers\ReportHunian.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$jumlah', 'C:\\2023project\\aparus3\\app\\Controllers\\ReportHunian.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->penghuni()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2024-07-26 08:31:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-26 08:31:24 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+in APPPATH\Controllers\ReportHunian.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->penghuni()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2024-07-26 08:31:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-26 08:31:40 --> Cannot use object of type CodeIgniter\Database\MySQLi\Builder as array
+in APPPATH\Controllers\ReportHunian.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->penghuni()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2024-07-26 08:31:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-26 08:31:57 --> Undefined property: CodeIgniter\Database\MySQLi\Builder::$jumlah
+in APPPATH\Controllers\ReportHunian.php on line 62.
+ 1 APPPATH\Controllers\ReportHunian.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Builder::$jumlah', 'C:\\2023project\\aparus3\\app\\Controllers\\ReportHunian.php', 62, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->penghuni()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2024-07-26 08:32:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 08:32:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 08:34:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-26 08:34:24 --> mysqli_sql_exception: Unknown column 'status' in 'group statement' in C:\2023project\aparus3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\2023project\aparus3\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT count(ko...', 0)
+#1 C:\2023project\aparus3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(ko...')
+#2 C:\2023project\aparus3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(ko...')
+#3 C:\2023project\aparus3\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT count(ko...', Array, false)
+#4 C:\2023project\aparus3\app\Models\ReportHunian_model.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\2023project\aparus3\app\Controllers\ReportHunian.php(61): App\Models\ReportHunian_model->getPenghuni()
+#6 C:\2023project\aparus3\system\CodeIgniter.php(942): App\Controllers\ReportHunian->penghuni()
+#7 C:\2023project\aparus3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+#8 C:\2023project\aparus3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\2023project\aparus3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\2023project\aparus3\system\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\...')
+#11 {main}
+CRITICAL - 2024-07-26 08:34:24 --> Unknown column 'status' in 'group statement'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT count(kontrak_id) as penghuni
+FROM `aprs_kontrak`
+GROUP BY `status`', [], false)
+ 2 APPPATH\Models\ReportHunian_model.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\ReportHunian.php(61): App\Models\ReportHunian_model->getPenghuni()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->penghuni()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2024-07-26 08:34:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 08:35:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 08:37:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 08:37:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 08:38:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 08:39:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 08:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-26 08:50:50 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+in APPPATH\Controllers\ReportHunian.php on line 63.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->penghuni()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2024-07-26 08:51:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-26 08:51:27 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$jumlah
+in APPPATH\Controllers\ReportHunian.php on line 63.
+ 1 APPPATH\Controllers\ReportHunian.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$jumlah', 'C:\\2023project\\aparus3\\app\\Controllers\\ReportHunian.php', 63, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->penghuni()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2024-07-26 08:51:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-26 08:51:46 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$jumlah
+in APPPATH\Controllers\ReportHunian.php on line 63.
+ 1 APPPATH\Controllers\ReportHunian.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$jumlah', 'C:\\2023project\\aparus3\\app\\Controllers\\ReportHunian.php', 63, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->penghuni()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2024-07-26 08:52:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-26 08:52:02 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$jumlah
+in APPPATH\Controllers\ReportHunian.php on line 63.
+ 1 APPPATH\Controllers\ReportHunian.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$jumlah', 'C:\\2023project\\aparus3\\app\\Controllers\\ReportHunian.php', 63, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->penghuni()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2024-07-26 08:52:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-26 08:52:26 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$jumlah
+in APPPATH\Controllers\ReportHunian.php on line 63.
+ 1 APPPATH\Controllers\ReportHunian.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$jumlah', 'C:\\2023project\\aparus3\\app\\Controllers\\ReportHunian.php', 63, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->penghuni()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2024-07-26 08:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-26 08:52:49 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$jumlah
+in APPPATH\Controllers\ReportHunian.php on line 63.
+ 1 APPPATH\Controllers\ReportHunian.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$jumlah', 'C:\\2023project\\aparus3\\app\\Controllers\\ReportHunian.php', 63, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->penghuni()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2024-07-26 08:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-26 08:53:25 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$jumlah
+in APPPATH\Controllers\ReportHunian.php on line 63.
+ 1 APPPATH\Controllers\ReportHunian.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$jumlah', 'C:\\2023project\\aparus3\\app\\Controllers\\ReportHunian.php', 63, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->penghuni()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2024-07-26 08:55:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-26 08:55:21 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$getRow
+in APPPATH\Controllers\ReportHunian.php on line 62.
+ 1 APPPATH\Controllers\ReportHunian.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$getRow', 'C:\\2023project\\aparus3\\app\\Controllers\\ReportHunian.php', 62, [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->penghuni()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2024-07-26 08:55:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 08:56:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 08:56:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 09:06:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 09:06:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 09:06:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 09:06:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 09:06:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 09:06:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 09:06:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 09:06:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 09:07:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 09:07:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 09:08:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 09:09:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 09:09:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 09:10:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-26 09:10:24 --> Cannot use object of type stdClass as array
+in APPPATH\Views\penghuni\daftar.php on line 59.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('penghuni/daftar', [], true)
+ 4 APPPATH\Controllers\ReportHunian.php(62): view('penghuni/daftar', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->penghuni()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2024-07-26 09:10:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 09:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 09:11:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 09:11:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-26 09:11:37 --> Undefined variable: keyword
+in APPPATH\Views\report\penghuni.php on line 40.
+ 1 APPPATH\Views\report\penghuni.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: keyword', 'C:\\2023project\\aparus3\\app\\Views\\report\\penghuni.php', 40, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\report\\penghuni.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('report/penghuni', [], true)
+ 5 APPPATH\Controllers\ReportHunian.php(62): view('report/penghuni', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->penghuni()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2024-07-26 09:12:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 09:15:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 09:16:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 09:17:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-26 09:17:09 --> Cannot use object of type stdClass as array
+in APPPATH\Views\report\penghuni.php on line 37.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('report/penghuni', [], true)
+ 4 APPPATH\Controllers\ReportHunian.php(62): view('report/penghuni', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->penghuni()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2024-07-26 09:17:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-26 09:17:22 --> Undefined property: stdClass::$total
+in APPPATH\Views\report\penghuni.php on line 37.
+ 1 APPPATH\Views\report\penghuni.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$total', 'C:\\2023project\\aparus3\\app\\Views\\report\\penghuni.php', 37, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\report\\penghuni.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('report/penghuni', [], true)
+ 5 APPPATH\Controllers\ReportHunian.php(62): view('report/penghuni', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->penghuni()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2024-07-26 09:17:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 09:17:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 09:18:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 09:18:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 09:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-26 10:25:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

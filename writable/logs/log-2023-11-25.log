@@ -1,0 +1,1717 @@
+CRITICAL - 2023-11-25 03:40:31 --> Class 'App\Models\User_model' not found
+in APPPATH\Controllers\Users.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Users->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+CRITICAL - 2023-11-25 03:40:58 --> Class 'App\Models\Golongan_model' not found
+in APPPATH\Controllers\Users.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Users->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+CRITICAL - 2023-11-25 03:41:48 --> Class 'App\Models\Golongan_model' not found
+in APPPATH\Controllers\Users.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Users->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+ERROR - 2023-11-25 03:42:54 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\2023project\aparus\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\2023project\aparus\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', 'root', 'aparus', 3306, '', 0)
+#1 C:\2023project\aparus\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\2023project\aparus\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\2023project\aparus\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\2023project\aparus\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\2023project\aparus\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\2023project\aparus\app\Controllers\Users.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\2023project\aparus\system\CodeIgniter.php(942): App\Controllers\Users->list()
+#8 C:\2023project\aparus\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\2023project\aparus\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\2023project\aparus\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\2023project\aparus\system\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\2023project\aparus\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\2023project\aparus\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\2023project\aparus\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\2023project\aparus\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\2023project\aparus\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\2023project\aparus\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\2023project\aparus\app\Controllers\Users.php(28): CodeIgniter\BaseModel->findAll()
+#6 C:\2023project\aparus\system\CodeIgniter.php(942): App\Controllers\Users->list()
+#7 C:\2023project\aparus\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\2023project\aparus\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\2023project\aparus\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\2023project\aparus\system\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\...')
+#11 {main}
+CRITICAL - 2023-11-25 03:42:54 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `aprsuser`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Users.php(28): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Users->list()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+ERROR - 2023-11-25 03:43:27 --> mysqli_sql_exception: Table 'aparus.aprsuser' doesn't exist in C:\2023project\aparus\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\2023project\aparus\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\2023project\aparus\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\2023project\aparus\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\2023project\aparus\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\2023project\aparus\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\2023project\aparus\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\2023project\aparus\app\Controllers\Users.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\2023project\aparus\system\CodeIgniter.php(942): App\Controllers\Users->list()
+#8 C:\2023project\aparus\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\2023project\aparus\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\2023project\aparus\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\2023project\aparus\system\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\...')
+#12 {main}
+CRITICAL - 2023-11-25 03:43:27 --> Table 'aparus.aprsuser' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `aprsuser`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Users.php(28): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Users->list()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+ERROR - 2023-11-25 03:43:28 --> mysqli_sql_exception: Table 'aparus.aprsuser' doesn't exist in C:\2023project\aparus\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\2023project\aparus\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\2023project\aparus\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\2023project\aparus\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\2023project\aparus\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\2023project\aparus\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\2023project\aparus\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\2023project\aparus\app\Controllers\Users.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\2023project\aparus\system\CodeIgniter.php(942): App\Controllers\Users->list()
+#8 C:\2023project\aparus\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\2023project\aparus\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\2023project\aparus\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\2023project\aparus\system\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\...')
+#12 {main}
+CRITICAL - 2023-11-25 03:43:28 --> Table 'aparus.aprsuser' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `aprsuser`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Users.php(28): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Users->list()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 03:43:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-25 03:44:22 --> mysqli_sql_exception: Table 'aparus.aprs_user' doesn't exist in C:\2023project\aparus\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\2023project\aparus\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\2023project\aparus\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\2023project\aparus\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\2023project\aparus\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\2023project\aparus\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\2023project\aparus\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\2023project\aparus\app\Controllers\Users.php(28): CodeIgniter\BaseModel->findAll()
+#7 C:\2023project\aparus\system\CodeIgniter.php(942): App\Controllers\Users->list()
+#8 C:\2023project\aparus\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\2023project\aparus\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\2023project\aparus\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\2023project\aparus\system\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\...')
+#12 {main}
+CRITICAL - 2023-11-25 03:44:22 --> Table 'aparus.aprs_user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `aprs_user`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Users.php(28): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Users->list()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 03:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 03:45:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 03:46:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 03:46:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 03:47:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 03:47:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-25 03:47:57 --> mysqli_sql_exception: Table 'aparus.aprs_tbl_master_golongan' doesn't exist in C:\2023project\aparus\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\2023project\aparus\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\2023project\aparus\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\2023project\aparus\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\2023project\aparus\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\2023project\aparus\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\2023project\aparus\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\2023project\aparus\app\Controllers\Users.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\2023project\aparus\system\CodeIgniter.php(942): App\Controllers\Users->add()
+#8 C:\2023project\aparus\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\2023project\aparus\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\2023project\aparus\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\2023project\aparus\system\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\...')
+#12 {main}
+CRITICAL - 2023-11-25 03:47:57 --> Table 'aparus.aprs_tbl_master_golongan' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `aprs_tbl_master_golongan`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Users.php(37): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Users->add()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 03:48:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-25 03:49:06 --> mysqli_sql_exception: Table 'aparus.aprs_tbl_master_golongan' doesn't exist in C:\2023project\aparus\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\2023project\aparus\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\2023project\aparus\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\2023project\aparus\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\2023project\aparus\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\2023project\aparus\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\2023project\aparus\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\2023project\aparus\app\Controllers\Users.php(74): CodeIgniter\BaseModel->findAll()
+#7 C:\2023project\aparus\system\CodeIgniter.php(942): App\Controllers\Users->edit('9')
+#8 C:\2023project\aparus\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\2023project\aparus\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\2023project\aparus\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\2023project\aparus\system\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\...')
+#12 {main}
+CRITICAL - 2023-11-25 03:49:06 --> Table 'aparus.aprs_tbl_master_golongan' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `aprs_tbl_master_golongan`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Users.php(74): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Users->edit('9')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+ERROR - 2023-11-25 03:50:19 --> mysqli_sql_exception: Table 'aparus.aprs_tbl_master_golongan' doesn't exist in C:\2023project\aparus\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\2023project\aparus\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\2023project\aparus\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\2023project\aparus\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\2023project\aparus\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\2023project\aparus\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\2023project\aparus\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\2023project\aparus\app\Controllers\Users.php(74): CodeIgniter\BaseModel->findAll()
+#7 C:\2023project\aparus\system\CodeIgniter.php(942): App\Controllers\Users->edit('9')
+#8 C:\2023project\aparus\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\2023project\aparus\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\2023project\aparus\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\2023project\aparus\system\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\...')
+#12 {main}
+CRITICAL - 2023-11-25 03:50:19 --> Table 'aparus.aprs_tbl_master_golongan' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `aprs_tbl_master_golongan`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Users.php(74): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Users->edit('9')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 03:50:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 03:51:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 03:51:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 03:52:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 03:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 03:53:10 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Profil.php on line 24.
+ 1 APPPATH\Controllers\Profil.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\2023project\\aparus\\app\\Controllers\\Profil.php', 24, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Profil->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 03:53:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 03:53:56 --> Trying to access array offset on value of type null
+in APPPATH\Views\profil\profile.php on line 65.
+ 1 APPPATH\Views\profil\profile.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\2023project\\aparus\\app\\Views\\profil\\profile.php', 65, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus\\app\\Views\\profil\\profile.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('profil/profile', [], true)
+ 5 APPPATH\Controllers\Profil.php(24): view('profil/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Profil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 03:54:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 03:54:32 --> Trying to access array offset on value of type null
+in APPPATH\Views\profil\profile.php on line 65.
+ 1 APPPATH\Views\profil\profile.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\2023project\\aparus\\app\\Views\\profil\\profile.php', 65, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus\\app\\Views\\profil\\profile.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('profil/profile', [], true)
+ 5 APPPATH\Controllers\Profil.php(22): view('profil/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Profil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 03:55:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 03:55:21 --> Trying to access array offset on value of type null
+in APPPATH\Views\profil\profile.php on line 65.
+ 1 APPPATH\Views\profil\profile.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\2023project\\aparus\\app\\Views\\profil\\profile.php', 65, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus\\app\\Views\\profil\\profile.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('profil/profile', [], true)
+ 5 APPPATH\Controllers\Profil.php(21): view('profil/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Profil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+CRITICAL - 2023-11-25 04:01:39 --> "sessionCheck" filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 580.
+ 1 SYSTEMPATH\Filters\Filters.php(580): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('sessionCheck')
+ 2 SYSTEMPATH\Filters\Filters.php(263): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH\Filters\Filters.php(174): CodeIgniter\Filters\Filters->initialize('profil')
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('profil', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+CRITICAL - 2023-11-25 04:02:41 --> "sessionCheck" filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 580.
+ 1 SYSTEMPATH\Filters\Filters.php(580): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('sessionCheck')
+ 2 SYSTEMPATH\Filters\Filters.php(263): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH\Filters\Filters.php(174): CodeIgniter\Filters\Filters->initialize('profil')
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('profil', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+CRITICAL - 2023-11-25 04:02:42 --> "sessionCheck" filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 580.
+ 1 SYSTEMPATH\Filters\Filters.php(580): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('sessionCheck')
+ 2 SYSTEMPATH\Filters\Filters.php(263): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH\Filters\Filters.php(174): CodeIgniter\Filters\Filters->initialize('profil')
+ 4 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('profil', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+CRITICAL - 2023-11-25 04:04:25 --> Class 'Config\authFilter' not found
+in SYSTEMPATH\Filters\Filters.php on line 177.
+ 1 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('profil', 'before')
+ 2 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 4 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 04:05:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:07:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:08:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:10:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:11:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:12:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:12:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:13:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:15:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:15:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:16:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:18:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:20:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:26:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:26:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:32:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:32:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:32:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:32:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-25 04:32:23 --> mysqli_sql_exception: Table 'aparus.aprs_tbl_master_golongan' doesn't exist in C:\2023project\aparus\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\2023project\aparus\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\2023project\aparus\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\2023project\aparus\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\2023project\aparus\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\2023project\aparus\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\2023project\aparus\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\2023project\aparus\app\Controllers\Users.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\2023project\aparus\system\CodeIgniter.php(942): App\Controllers\Users->add()
+#8 C:\2023project\aparus\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\2023project\aparus\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\2023project\aparus\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\2023project\aparus\system\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\...')
+#12 {main}
+CRITICAL - 2023-11-25 04:32:23 --> Table 'aparus.aprs_tbl_master_golongan' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `aprs_tbl_master_golongan`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Users.php(37): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Users->add()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 04:32:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:32:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:32:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:32:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-25 04:32:42 --> mysqli_sql_exception: Table 'aparus.aprs_tbl_master_golongan' doesn't exist in C:\2023project\aparus\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\2023project\aparus\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\2023project\aparus\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\2023project\aparus\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\2023project\aparus\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\2023project\aparus\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\2023project\aparus\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\2023project\aparus\app\Controllers\Users.php(37): CodeIgniter\BaseModel->findAll()
+#7 C:\2023project\aparus\system\CodeIgniter.php(942): App\Controllers\Users->add()
+#8 C:\2023project\aparus\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\2023project\aparus\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\2023project\aparus\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\2023project\aparus\system\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\...')
+#12 {main}
+CRITICAL - 2023-11-25 04:32:42 --> Table 'aparus.aprs_tbl_master_golongan' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `aprs_tbl_master_golongan`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Users.php(37): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Users->add()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+CRITICAL - 2023-11-25 04:33:55 --> Class 'App\Controllers\Golongan_model' not found
+in APPPATH\Controllers\Users.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Users->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 04:34:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 04:34:09 --> Undefined variable: data
+in APPPATH\Controllers\Users.php on line 34.
+ 1 APPPATH\Controllers\Users.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'C:\\2023project\\aparus\\app\\Controllers\\Users.php', 34, [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Users->new()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 04:34:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 04:34:23 --> Invalid file: "users/new.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('users/new.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('users/new', [], true)
+ 3 APPPATH\Controllers\Users.php(34): view('users/new')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Users->new()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 04:34:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 04:34:39 --> Undefined variable: golongan
+in APPPATH\Views\users\new.php on line 96.
+ 1 APPPATH\Views\users\new.php(96): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: golongan', 'C:\\2023project\\aparus\\app\\Views\\users\\new.php', 96, [])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus\\app\\Views\\users\\new.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('users/new', [], true)
+ 5 APPPATH\Controllers\Users.php(34): view('users/new')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Users->new()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 04:35:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:36:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:37:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:39:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:43:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:43:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:43:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:45:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:47:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:48:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:48:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 04:49:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 05:09:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 05:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-25 05:09:33 --> mysqli_sql_exception: Column 'user_nik' cannot be null in C:\2023project\aparus\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\2023project\aparus\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ap...', 0)
+#1 C:\2023project\aparus\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ap...')
+#2 C:\2023project\aparus\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ap...')
+#3 C:\2023project\aparus\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ap...', Array, false)
+#4 C:\2023project\aparus\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\2023project\aparus\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\2023project\aparus\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\2023project\aparus\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\2023project\aparus\app\Controllers\Users.php(97): CodeIgniter\BaseModel->save(Array)
+#9 C:\2023project\aparus\system\CodeIgniter.php(942): App\Controllers\Users->save()
+#10 C:\2023project\aparus\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#11 C:\2023project\aparus\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\2023project\aparus\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 C:\2023project\aparus\system\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\...')
+#14 {main}
+CRITICAL - 2023-11-25 05:09:33 --> Column 'user_nik' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `aprs_user` (`user_nick`, `user_nama`, `password`, `user_nik`, `user_email`) VALUES (:user_nick:, :user_nama:, :password:, :user_nik:, :user_email:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Users.php(97): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Users->save()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 05:10:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 05:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 05:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 05:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 05:13:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 05:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 05:14:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 05:14:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 05:14:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 05:14:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 05:15:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 05:18:55 --> Class 'App\Models\Program_model' not found
+in APPPATH\Controllers\Role.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Role->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 05:19:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 05:19:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 05:19:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 05:19:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 05:20:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 05:20:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 05:20:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 05:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 05:22:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-25 05:22:49 --> mysqli_sql_exception: Unknown column 'email' in 'where clause' in C:\2023project\aparus\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\2023project\aparus\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\2023project\aparus\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\2023project\aparus\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\2023project\aparus\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\2023project\aparus\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\2023project\aparus\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\2023project\aparus\app\Controllers\Users.php(78): CodeIgniter\BaseModel->first()
+#7 C:\2023project\aparus\system\CodeIgniter.php(942): App\Controllers\Users->save()
+#8 C:\2023project\aparus\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\2023project\aparus\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\2023project\aparus\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\2023project\aparus\system\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\...')
+#12 {main}
+CRITICAL - 2023-11-25 05:22:49 --> Unknown column 'email' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `aprs_user`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Users.php(78): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Users->save()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 05:23:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 05:23:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 05:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 05:25:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 05:25:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 05:25:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 05:28:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 05:32:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 05:32:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 05:32:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 05:32:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 05:32:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 05:32:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-25 05:32:40 --> mysqli_sql_exception: Table 'aparus.aprs_tbl_user_role' doesn't exist in C:\2023project\aparus\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\2023project\aparus\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\2023project\aparus\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\2023project\aparus\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\2023project\aparus\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\2023project\aparus\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\2023project\aparus\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\2023project\aparus\app\Controllers\Auth.php(33): CodeIgniter\BaseModel->findAll()
+#7 C:\2023project\aparus\system\CodeIgniter.php(942): App\Controllers\Auth->switcher()
+#8 C:\2023project\aparus\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\2023project\aparus\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\2023project\aparus\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\2023project\aparus\system\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\...')
+#12 {main}
+CRITICAL - 2023-11-25 05:32:40 --> Table 'aparus.aprs_tbl_user_role' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `aprs_tbl_user_role`
+WHERE `id_user` = :id_user:', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Auth.php(33): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->switcher()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 07:39:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-25 07:39:22 --> mysqli_sql_exception: Table 'aparus.aprs_tbl_user_role' doesn't exist in C:\2023project\aparus\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\2023project\aparus\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\2023project\aparus\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\2023project\aparus\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\2023project\aparus\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\2023project\aparus\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\2023project\aparus\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\2023project\aparus\app\Controllers\Auth.php(33): CodeIgniter\BaseModel->findAll()
+#7 C:\2023project\aparus\system\CodeIgniter.php(942): App\Controllers\Auth->switcher()
+#8 C:\2023project\aparus\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\2023project\aparus\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\2023project\aparus\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\2023project\aparus\system\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\...')
+#12 {main}
+CRITICAL - 2023-11-25 07:39:22 --> Table 'aparus.aprs_tbl_user_role' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `aprs_tbl_user_role`
+WHERE `id_user` IS NULL', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Auth.php(33): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->switcher()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 07:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 07:42:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 07:42:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 07:42:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 07:43:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 07:44:01 --> Invalid file: "dashboard.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\Dashboard.php(12): view('dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 07:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 07:48:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 07:48:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 07:49:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 07:51:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 07:52:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 07:52:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 07:52:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 07:52:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 07:52:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 07:52:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 07:53:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 07:53:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 07:54:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 07:54:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 07:54:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 07:54:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 07:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 07:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 07:55:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 07:55:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 07:56:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 07:57:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 07:57:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 07:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 07:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 07:58:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 07:58:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 07:58:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 07:58:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 07:59:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 07:59:05 --> Undefined index: user_nip
+in APPPATH\Views\profil\profile.php on line 78.
+ 1 APPPATH\Views\profil\profile.php(78): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: user_nip', 'C:\\2023project\\aparus\\app\\Views\\profil\\profile.php', 78, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus\\app\\Views\\profil\\profile.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('profil/profile', [], true)
+ 5 APPPATH\Controllers\Profil.php(21): view('profil/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Profil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 07:59:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 08:21:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 08:21:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 08:25:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 10:21:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 10:22:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-25 10:23:00 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in C:\2023project\aparus\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\2023project\aparus\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'aparus', 3306, '', 0)
+#1 C:\2023project\aparus\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\2023project\aparus\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\2023project\aparus\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\2023project\aparus\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\2023project\aparus\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\2023project\aparus\app\Controllers\Profil.php(20): CodeIgniter\BaseModel->first()
+#7 C:\2023project\aparus\system\CodeIgniter.php(942): App\Controllers\Profil->index()
+#8 C:\2023project\aparus\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+#9 C:\2023project\aparus\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\2023project\aparus\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\2023project\aparus\system\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in C:\2023project\aparus\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\2023project\aparus\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\2023project\aparus\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\2023project\aparus\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\2023project\aparus\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\2023project\aparus\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 C:\2023project\aparus\app\Controllers\Profil.php(20): CodeIgniter\BaseModel->first()
+#6 C:\2023project\aparus\system\CodeIgniter.php(942): App\Controllers\Profil->index()
+#7 C:\2023project\aparus\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+#8 C:\2023project\aparus\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\2023project\aparus\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\2023project\aparus\system\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\...')
+#11 {main}
+CRITICAL - 2023-11-25 10:23:00 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `aprs_user`
+WHERE `user_id` = :user_id:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Profil.php(20): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Profil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 10:23:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-25 10:23:05 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in C:\2023project\aparus\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\2023project\aparus\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'aparus', 3306, '', 0)
+#1 C:\2023project\aparus\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\2023project\aparus\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\2023project\aparus\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\2023project\aparus\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\2023project\aparus\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\2023project\aparus\app\Controllers\Profil.php(20): CodeIgniter\BaseModel->first()
+#7 C:\2023project\aparus\system\CodeIgniter.php(942): App\Controllers\Profil->index()
+#8 C:\2023project\aparus\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+#9 C:\2023project\aparus\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\2023project\aparus\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\2023project\aparus\system\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in C:\2023project\aparus\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\2023project\aparus\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\2023project\aparus\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\2023project\aparus\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\2023project\aparus\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\2023project\aparus\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 C:\2023project\aparus\app\Controllers\Profil.php(20): CodeIgniter\BaseModel->first()
+#6 C:\2023project\aparus\system\CodeIgniter.php(942): App\Controllers\Profil->index()
+#7 C:\2023project\aparus\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+#8 C:\2023project\aparus\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\2023project\aparus\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\2023project\aparus\system\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\...')
+#11 {main}
+CRITICAL - 2023-11-25 10:23:05 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `aprs_user`
+WHERE `user_id` = :user_id:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Profil.php(20): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Profil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 10:23:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 10:23:23 --> Undefined index: user_nip
+in APPPATH\Views\profil\profile.php on line 78.
+ 1 APPPATH\Views\profil\profile.php(78): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: user_nip', 'C:\\2023project\\aparus\\app\\Views\\profil\\profile.php', 78, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus\\app\\Views\\profil\\profile.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('profil/profile', [], true)
+ 5 APPPATH\Controllers\Profil.php(21): view('profil/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Profil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 10:25:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 10:25:01 --> Undefined index: user_jabatan
+in APPPATH\Views\profil\profile.php on line 92.
+ 1 APPPATH\Views\profil\profile.php(92): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: user_jabatan', 'C:\\2023project\\aparus\\app\\Views\\profil\\profile.php', 92, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus\\app\\Views\\profil\\profile.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('profil/profile', [], true)
+ 5 APPPATH\Controllers\Profil.php(21): view('profil/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Profil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 10:26:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 10:26:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 10:26:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 10:26:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 10:26:49 --> Undefined index: user_jabatan
+in APPPATH\Views\profil\profile.php on line 92.
+ 1 APPPATH\Views\profil\profile.php(92): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: user_jabatan', 'C:\\2023project\\aparus\\app\\Views\\profil\\profile.php', 92, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus\\app\\Views\\profil\\profile.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('profil/profile', [], true)
+ 5 APPPATH\Controllers\Profil.php(21): view('profil/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Profil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 10:27:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 10:27:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 10:28:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 10:28:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 10:29:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 10:29:00 --> Undefined property: App\Controllers\Profil::$golongan
+in APPPATH\Controllers\Profil.php on line 31.
+ 1 APPPATH\Controllers\Profil.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Profil::$golongan', 'C:\\2023project\\aparus\\app\\Controllers\\Profil.php', 31, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Profil->update()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 10:29:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 10:29:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 10:29:27 --> Undefined property: App\Controllers\Profil::$golongan
+in APPPATH\Controllers\Profil.php on line 31.
+ 1 APPPATH\Controllers\Profil.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Profil::$golongan', 'C:\\2023project\\aparus\\app\\Controllers\\Profil.php', 31, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Profil->update()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 10:29:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 10:29:50 --> Undefined index: user_nip
+in APPPATH\Views\profil\updateuser.php on line 82.
+ 1 APPPATH\Views\profil\updateuser.php(82): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: user_nip', 'C:\\2023project\\aparus\\app\\Views\\profil\\updateuser.php', 82, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus\\app\\Views\\profil\\updateuser.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('profil/updateuser', [], true)
+ 5 APPPATH\Controllers\Profil.php(29): view('profil/updateuser', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Profil->update()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 10:30:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 10:30:10 --> Undefined index: user_nip
+in APPPATH\Views\profil\updateuser.php on line 82.
+ 1 APPPATH\Views\profil\updateuser.php(82): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: user_nip', 'C:\\2023project\\aparus\\app\\Views\\profil\\updateuser.php', 82, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus\\app\\Views\\profil\\updateuser.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('profil/updateuser', [], true)
+ 5 APPPATH\Controllers\Profil.php(29): view('profil/updateuser', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Profil->update()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 10:30:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 10:30:50 --> Undefined index: user_jabatan
+in APPPATH\Views\profil\updateuser.php on line 90.
+ 1 APPPATH\Views\profil\updateuser.php(90): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: user_jabatan', 'C:\\2023project\\aparus\\app\\Views\\profil\\updateuser.php', 90, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus\\app\\Views\\profil\\updateuser.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('profil/updateuser', [], true)
+ 5 APPPATH\Controllers\Profil.php(29): view('profil/updateuser', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Profil->update()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 10:31:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 10:31:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 10:31:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 10:31:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 10:32:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 10:32:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 10:32:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:32:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 12:32:28 --> Undefined index: user_id
+in APPPATH\Views\profil\updateuser.php on line 51.
+ 1 APPPATH\Views\profil\updateuser.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: user_id', 'C:\\2023project\\aparus\\app\\Views\\profil\\updateuser.php', 51, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus\\app\\Views\\profil\\updateuser.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('profil/updateuser', [], true)
+ 5 APPPATH\Controllers\Profil.php(29): view('profil/updateuser', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Profil->update()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 12:32:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 12:32:56 --> Trying to access array offset on value of type null
+in APPPATH\Views\profil\profile.php on line 65.
+ 1 APPPATH\Views\profil\profile.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\2023project\\aparus\\app\\Views\\profil\\profile.php', 65, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus\\app\\Views\\profil\\profile.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('profil/profile', [], true)
+ 5 APPPATH\Controllers\Profil.php(21): view('profil/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Profil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 12:33:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 12:33:15 --> Trying to access array offset on value of type null
+in APPPATH\Views\profil\profile.php on line 65.
+ 1 APPPATH\Views\profil\profile.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\2023project\\aparus\\app\\Views\\profil\\profile.php', 65, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus\\app\\Views\\profil\\profile.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('profil/profile', [], true)
+ 5 APPPATH\Controllers\Profil.php(21): view('profil/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Profil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 12:33:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:33:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:33:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:34:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:34:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:37:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:37:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:37:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:38:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:38:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:40:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:40:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:40:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:40:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:40:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:40:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:41:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:41:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:41:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:41:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:41:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:41:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:42:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:42:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:42:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:42:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:42:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:42:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:43:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:43:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:43:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:43:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:44:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:44:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:44:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:44:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:44:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:44:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:45:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:46:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:46:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:46:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:48:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:48:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:48:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:48:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:48:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:48:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:48:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:48:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:48:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:48:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:50:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:50:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:50:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:50:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:50:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:50:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:51:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:51:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:51:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:51:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:51:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:51:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:51:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:51:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:51:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:51:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:51:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:52:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:52:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:52:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:52:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:52:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:52:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:53:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:53:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:54:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:54:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:55:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:55:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:56:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:56:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:56:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:56:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:57:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:57:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:57:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:57:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:57:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:57:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:57:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:57:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:57:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:57:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 12:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:01:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:01:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:02:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:02:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:02:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:03:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 13:03:20 --> Class 'App\Models\Program_model' not found
+in APPPATH\Controllers\Role.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Role->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 13:14:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:14:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:14:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:14:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:14:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:14:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:14:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 13:14:53 --> Class 'App\Models\Program_model' not found
+in APPPATH\Controllers\Role.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Role->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 13:15:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 13:15:52 --> Class 'App\Controllers\Program_model' not found
+in APPPATH\Controllers\Role.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Role->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 13:18:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 13:18:56 --> Class 'App\Controllers\Program_model' not found
+in APPPATH\Controllers\Role.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Role->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 13:21:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:23:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 13:23:23 --> Undefined property: App\Controllers\Role::$role_model
+in APPPATH\Controllers\Role.php on line 32.
+ 1 APPPATH\Controllers\Role.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Role::$role_model', 'C:\\2023project\\aparus\\app\\Controllers\\Role.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Role->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 13:23:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:23:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:24:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 13:24:20 --> Undefined property: App\Controllers\Role::$role_model
+in APPPATH\Controllers\Role.php on line 32.
+ 1 APPPATH\Controllers\Role.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Role::$role_model', 'C:\\2023project\\aparus\\app\\Controllers\\Role.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Role->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 13:24:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:30:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:30:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:33:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:33:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:33:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:33:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:34:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 13:34:18 --> Undefined property: App\Controllers\Role::$role_model
+in APPPATH\Controllers\Role.php on line 32.
+ 1 APPPATH\Controllers\Role.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Role::$role_model', 'C:\\2023project\\aparus\\app\\Controllers\\Role.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Role->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 13:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:34:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 13:34:28 --> Undefined property: App\Controllers\Role::$role_model
+in APPPATH\Controllers\Role.php on line 32.
+ 1 APPPATH\Controllers\Role.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Role::$role_model', 'C:\\2023project\\aparus\\app\\Controllers\\Role.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Role->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 13:45:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 13:45:41 --> Class 'App\Controllers\RoleAssign_model' not found
+in APPPATH\Controllers\Role.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Role->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 13:46:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 13:46:22 --> Undefined variable: kpa
+in APPPATH\Views\role\list.php on line 51.
+ 1 APPPATH\Views\role\list.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kpa', 'C:\\2023project\\aparus\\app\\Views\\role\\list.php', 51, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus\\app\\Views\\role\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('role/list', [], true)
+ 5 APPPATH\Controllers\Role.php(31): view('role/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Role->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 13:51:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 13:51:30 --> Undefined variable: kpa
+in APPPATH\Views\role\list.php on line 51.
+ 1 APPPATH\Views\role\list.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kpa', 'C:\\2023project\\aparus\\app\\Views\\role\\list.php', 51, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus\\app\\Views\\role\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('role/list', [], true)
+ 5 APPPATH\Controllers\Role.php(32): view('role/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Role->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 13:53:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:53:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:53:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:54:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:54:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:54:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:54:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:54:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:54:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:54:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:54:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:55:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:55:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:55:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:55:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:55:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:55:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:55:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:55:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:56:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 13:56:00 --> Undefined variable: kpa
+in APPPATH\Views\role\list.php on line 51.
+ 1 APPPATH\Views\role\list.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kpa', 'C:\\2023project\\aparus\\app\\Views\\role\\list.php', 51, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus\\app\\Views\\role\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('role/list', [], true)
+ 5 APPPATH\Controllers\Role.php(32): view('role/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Role->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 13:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 13:56:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-25 13:56:58 --> mysqli_sql_exception: Table 'aparus.tbl_user_role' doesn't exist in C:\2023project\aparus\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\2023project\aparus\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ap...', 0)
+#1 C:\2023project\aparus\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ap...')
+#2 C:\2023project\aparus\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ap...')
+#3 C:\2023project\aparus\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ap...', Array, false)
+#4 C:\2023project\aparus\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\2023project\aparus\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\2023project\aparus\app\Controllers\Users.php(40): CodeIgniter\BaseModel->delete(Array)
+#7 C:\2023project\aparus\system\CodeIgniter.php(942): App\Controllers\Users->delete('4')
+#8 C:\2023project\aparus\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\2023project\aparus\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\2023project\aparus\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\2023project\aparus\system\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\...')
+#12 {main}
+CRITICAL - 2023-11-25 13:56:58 --> Table 'aparus.tbl_user_role' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `aprs_user`
+WHERE `user_id` IN :user_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\Users.php(40): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Users->delete('4')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 13:57:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 14:01:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 14:01:13 --> Undefined variable: kpa
+in APPPATH\Views\role\list.php on line 51.
+ 1 APPPATH\Views\role\list.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kpa', 'C:\\2023project\\aparus\\app\\Views\\role\\list.php', 51, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus\\app\\Views\\role\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('role/list', [], true)
+ 5 APPPATH\Controllers\Role.php(32): view('role/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Role->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 14:06:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 14:06:01 --> Undefined variable: users
+in APPPATH\Views\role\list.php on line 77.
+ 1 APPPATH\Views\role\list.php(77): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: users', 'C:\\2023project\\aparus\\app\\Views\\role\\list.php', 77, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus\\app\\Views\\role\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('role/list', [], true)
+ 5 APPPATH\Controllers\Role.php(33): view('role/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Role->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 14:07:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 14:18:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 14:18:46 --> array_filter() expects parameter 1 to be array, object given
+in APPPATH\Views\role\list.php on line 56.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_filter() expects parameter 1 to be array, object given', 'C:\\2023project\\aparus\\app\\Views\\role\\list.php', 56, [...])
+ 2 APPPATH\Views\role\list.php(56): array_filter(Object(CodeIgniter\Database\MySQLi\Result), Object(Closure))
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus\\app\\Views\\role\\list.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('role/list', [], true)
+ 6 APPPATH\Controllers\Role.php(33): view('role/list', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Role->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 14:22:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 14:22:21 --> array_filter() expects parameter 1 to be array, object given
+in APPPATH\Views\role\list.php on line 56.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_filter() expects parameter 1 to be array, object given', 'C:\\2023project\\aparus\\app\\Views\\role\\list.php', 56, [...])
+ 2 APPPATH\Views\role\list.php(56): array_filter(Object(CodeIgniter\Database\MySQLi\Result), Object(Closure))
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus\\app\\Views\\role\\list.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('role/list', [], true)
+ 6 APPPATH\Controllers\Role.php(33): view('role/list', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Role->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 14:22:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 14:22:37 --> array_filter() expects parameter 1 to be array, object given
+in APPPATH\Views\role\list.php on line 56.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_filter() expects parameter 1 to be array, object given', 'C:\\2023project\\aparus\\app\\Views\\role\\list.php', 56, [...])
+ 2 APPPATH\Views\role\list.php(56): array_filter(Object(CodeIgniter\Database\MySQLi\Result), Object(Closure))
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus\\app\\Views\\role\\list.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('role/list', [], true)
+ 6 APPPATH\Controllers\Role.php(33): view('role/list', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Role->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 14:22:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 14:22:38 --> array_filter() expects parameter 1 to be array, object given
+in APPPATH\Views\role\list.php on line 56.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_filter() expects parameter 1 to be array, object given', 'C:\\2023project\\aparus\\app\\Views\\role\\list.php', 56, [...])
+ 2 APPPATH\Views\role\list.php(56): array_filter(Object(CodeIgniter\Database\MySQLi\Result), Object(Closure))
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus\\app\\Views\\role\\list.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('role/list', [], true)
+ 6 APPPATH\Controllers\Role.php(33): view('role/list', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Role->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 14:22:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 14:22:52 --> array_filter() expects parameter 1 to be array, object given
+in APPPATH\Views\role\list.php on line 56.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_filter() expects parameter 1 to be array, object given', 'C:\\2023project\\aparus\\app\\Views\\role\\list.php', 56, [...])
+ 2 APPPATH\Views\role\list.php(56): array_filter(Object(CodeIgniter\Database\MySQLi\Result), Object(Closure))
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus\\app\\Views\\role\\list.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('role/list', [], true)
+ 6 APPPATH\Controllers\Role.php(33): view('role/list', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Role->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 14:27:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 14:27:51 --> array_filter() expects parameter 1 to be array, object given
+in APPPATH\Views\role\list.php on line 56.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_filter() expects parameter 1 to be array, object given', 'C:\\2023project\\aparus\\app\\Views\\role\\list.php', 56, [...])
+ 2 APPPATH\Views\role\list.php(56): array_filter(Object(CodeIgniter\Database\MySQLi\Result), Object(Closure))
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus\\app\\Views\\role\\list.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('role/list', [], true)
+ 6 APPPATH\Controllers\Role.php(33): view('role/list', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Role->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 14:29:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 14:29:15 --> Undefined index: id_role
+in APPPATH\Views\role\list.php on line 59.
+ 1 APPPATH\Views\role\list.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_role', 'C:\\2023project\\aparus\\app\\Views\\role\\list.php', 59, [...])
+ 2 [internal function]: CodeIgniter\View\View->{closure}([...])
+ 3 APPPATH\Views\role\list.php(60): array_filter([...], Object(Closure))
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus\\app\\Views\\role\\list.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('role/list', [], true)
+ 7 APPPATH\Controllers\Role.php(33): view('role/list', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Role->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 14:29:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 14:29:40 --> Undefined variable: roledata
+in APPPATH\Views\role\list.php on line 55.
+ 1 APPPATH\Views\role\list.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: roledata', 'C:\\2023project\\aparus\\app\\Views\\role\\list.php', 55, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus\\app\\Views\\role\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('role/list', [], true)
+ 5 APPPATH\Controllers\Role.php(33): view('role/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Role->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 14:29:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 14:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 14:30:38 --> Undefined variable: userAssign
+in APPPATH\Views\role\list.php on line 57.
+ 1 APPPATH\Views\role\list.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: userAssign', 'C:\\2023project\\aparus\\app\\Views\\role\\list.php', 57, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus\\app\\Views\\role\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('role/list', [], true)
+ 5 APPPATH\Controllers\Role.php(33): view('role/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Role->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 14:30:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 14:30:52 --> Undefined variable: userAssign
+in APPPATH\Views\role\list.php on line 57.
+ 1 APPPATH\Views\role\list.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: userAssign', 'C:\\2023project\\aparus\\app\\Views\\role\\list.php', 57, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus\\app\\Views\\role\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('role/list', [], true)
+ 5 APPPATH\Controllers\Role.php(33): view('role/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Role->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 14:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 14:31:20 --> Cannot use object of type mysqli as array
+in APPPATH\Views\role\list.php on line 58.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('role/list', [], true)
+ 4 APPPATH\Controllers\Role.php(33): view('role/list', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Role->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 14:31:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 14:31:57 --> Cannot use object of type mysqli as array
+in APPPATH\Views\role\list.php on line 58.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('role/list', [], true)
+ 4 APPPATH\Controllers\Role.php(33): view('role/list', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Role->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 14:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 14:31:59 --> Cannot use object of type mysqli as array
+in APPPATH\Views\role\list.php on line 58.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('role/list', [], true)
+ 4 APPPATH\Controllers\Role.php(33): view('role/list', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Role->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 14:36:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 14:36:13 --> syntax error, unexpected '<', expecting end of file
+in APPPATH\Views\role\list.php on line 52.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('role/list', [], true)
+ 3 APPPATH\Controllers\Role.php(33): view('role/list', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Role->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 14:36:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 14:36:25 --> Undefined variable: data
+in APPPATH\Views\role\list.php on line 49.
+ 1 APPPATH\Views\role\list.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'C:\\2023project\\aparus\\app\\Views\\role\\list.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus\\app\\Views\\role\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('role/list', [], true)
+ 5 APPPATH\Controllers\Role.php(33): view('role/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Role->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 14:36:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 14:37:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 14:37:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 14:42:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-25 14:42:05 --> mysqli_sql_exception: Table 'aparus.aprs_role_assing' doesn't exist in C:\2023project\aparus\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\2023project\aparus\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `user_id...', 0)
+#1 C:\2023project\aparus\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `user_id...')
+#2 C:\2023project\aparus\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `user_id...')
+#3 C:\2023project\aparus\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `user_id...', Array, false)
+#4 C:\2023project\aparus\app\Models\RoleAssign_model.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\2023project\aparus\app\Controllers\Role.php(32): App\Models\RoleAssign_model->getRoleAssign()
+#6 C:\2023project\aparus\system\CodeIgniter.php(942): App\Controllers\Role->index()
+#7 C:\2023project\aparus\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+#8 C:\2023project\aparus\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\2023project\aparus\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\2023project\aparus\system\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\...')
+#11 {main}
+CRITICAL - 2023-11-25 14:42:05 --> Table 'aparus.aprs_role_assing' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `user_id`, `user_nama`, `user_nik`, `role_name`
+FROM `aprs_user`
+JOIN `aprs_role_assing` ON `user_id` = `id_user`
+JOIN `aprs_role` ON `role_id` = `id_role`
+WHERE `status` = :status:', [...], false)
+ 2 APPPATH\Models\RoleAssign_model.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Role.php(32): App\Models\RoleAssign_model->getRoleAssign()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Role->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 14:42:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 14:44:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-25 14:44:28 --> mysqli_sql_exception: Unknown column 'role_name' in 'field list' in C:\2023project\aparus\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\2023project\aparus\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `user_id...', 0)
+#1 C:\2023project\aparus\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `user_id...')
+#2 C:\2023project\aparus\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `user_id...')
+#3 C:\2023project\aparus\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `user_id...', Array, false)
+#4 C:\2023project\aparus\app\Models\RoleAssign_model.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\2023project\aparus\app\Controllers\Role.php(32): App\Models\RoleAssign_model->getRoleAssign()
+#6 C:\2023project\aparus\system\CodeIgniter.php(942): App\Controllers\Role->index()
+#7 C:\2023project\aparus\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+#8 C:\2023project\aparus\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\2023project\aparus\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\2023project\aparus\system\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\...')
+#11 {main}
+CRITICAL - 2023-11-25 14:44:28 --> Unknown column 'role_name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `user_id`, `user_nama`, `user_nik`, `role_name`
+FROM `aprs_user`
+JOIN `aprs_role_assign` ON `user_id` = `id_user`
+WHERE `status` = :status:', [...], false)
+ 2 APPPATH\Models\RoleAssign_model.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Role.php(32): App\Models\RoleAssign_model->getRoleAssign()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Role->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 14:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-25 14:44:42 --> mysqli_sql_exception: Unknown column 'user_name' in 'field list' in C:\2023project\aparus\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\2023project\aparus\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `user_id...', 0)
+#1 C:\2023project\aparus\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `user_id...')
+#2 C:\2023project\aparus\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `user_id...')
+#3 C:\2023project\aparus\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `user_id...', Array, false)
+#4 C:\2023project\aparus\app\Models\RoleAssign_model.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\2023project\aparus\app\Controllers\Role.php(32): App\Models\RoleAssign_model->getRoleAssign()
+#6 C:\2023project\aparus\system\CodeIgniter.php(942): App\Controllers\Role->index()
+#7 C:\2023project\aparus\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+#8 C:\2023project\aparus\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\2023project\aparus\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\2023project\aparus\system\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\...')
+#11 {main}
+CRITICAL - 2023-11-25 14:44:42 --> Unknown column 'user_name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `user_id`, `user_nama`, `user_nik`, `user_name`
+FROM `aprs_user`
+JOIN `aprs_role_assign` ON `user_id` = `id_user`
+WHERE `status` = :status:', [...], false)
+ 2 APPPATH\Models\RoleAssign_model.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Role.php(32): App\Models\RoleAssign_model->getRoleAssign()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Role->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 14:44:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 14:45:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 14:46:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 14:53:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 14:57:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 14:57:33 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResultArray()
+in APPPATH\Models\RoleAssign_model.php on line 28.
+ 1 APPPATH\Controllers\Role.php(32): App\Models\RoleAssign_model->getRoleAssign()
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Role->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 14:58:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 14:58:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 14:59:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:00:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:01:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:01:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:02:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:03:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:03:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:04:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:05:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:08:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:08:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:10:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:10:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:10:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:11:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:11:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:11:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:11:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:11:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:11:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:16:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:16:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-25 15:16:36 --> mysqli_sql_exception: Unknown column 'id_user' in 'where clause' in C:\2023project\aparus\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\2023project\aparus\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\2023project\aparus\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\2023project\aparus\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\2023project\aparus\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\2023project\aparus\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\2023project\aparus\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\2023project\aparus\app\Controllers\Role.php(60): CodeIgniter\BaseModel->first()
+#7 C:\2023project\aparus\system\CodeIgniter.php(942): App\Controllers\Role->save()
+#8 C:\2023project\aparus\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+#9 C:\2023project\aparus\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\2023project\aparus\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\2023project\aparus\system\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\...')
+#12 {main}
+CRITICAL - 2023-11-25 15:16:36 --> Unknown column 'id_user' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `aprs_role`
+WHERE `id_user` = :id_user:
+AND `type` = :type:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Role.php(60): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Role->save()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 15:24:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:31:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-25 15:31:18 --> mysqli_sql_exception: Unknown column 'id_user' in 'where clause' in C:\2023project\aparus\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\2023project\aparus\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\2023project\aparus\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\2023project\aparus\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\2023project\aparus\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\2023project\aparus\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\2023project\aparus\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\2023project\aparus\app\Controllers\Role.php(60): CodeIgniter\BaseModel->first()
+#7 C:\2023project\aparus\system\CodeIgniter.php(942): App\Controllers\Role->save()
+#8 C:\2023project\aparus\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+#9 C:\2023project\aparus\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\2023project\aparus\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\2023project\aparus\system\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\...')
+#12 {main}
+CRITICAL - 2023-11-25 15:31:18 --> Unknown column 'id_user' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `aprs_role`
+WHERE `id_user` = :id_user:
+AND `type` = :type:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Role.php(60): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Role->save()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 15:31:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:33:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:34:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:34:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:34:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 15:34:18 --> Undefined index: user_role_id
+in APPPATH\Views\role\list.php on line 82.
+ 1 APPPATH\Views\role\list.php(82): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: user_role_id', 'C:\\2023project\\aparus\\app\\Views\\role\\list.php', 82, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus\\app\\Views\\role\\list.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('role/list', [], true)
+ 5 APPPATH\Controllers\Role.php(33): view('role/list', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Role->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 15:35:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:36:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:41:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-25 15:41:39 --> Call to a member function findAll() on null
+in APPPATH\Controllers\Role.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Role->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Role))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus\\public\\index.php')
+INFO - 2023-11-25 15:44:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:45:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:46:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 15:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 16:00:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 16:00:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 16:02:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 16:03:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 16:06:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 16:06:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 16:08:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 16:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 16:14:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 16:16:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 16:17:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 16:20:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 16:42:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 16:44:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 16:46:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 16:50:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 16:50:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 16:51:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 16:53:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 16:53:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 16:56:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 16:56:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 16:58:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:04:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:07:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:08:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:09:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:10:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:11:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:11:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:12:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:13:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:14:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:14:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:15:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:15:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:15:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:16:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-25 17:17:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

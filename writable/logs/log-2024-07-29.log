@@ -1,0 +1,133 @@
+INFO - 2024-07-29 14:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 14:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 14:14:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 14:14:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 14:14:46 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Controllers\ReportHunian.php on line 4.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-07-29 14:15:14 --> require(vendor/autoload.php): failed to open stream: No such file or directory
+in APPPATH\Controllers\ReportHunian.php on line 6.
+ 1 APPPATH\Controllers\ReportHunian.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(vendor/autoload.php): failed to open stream: No such file or directory', 'C:\\2023project\\aparus3\\app\\Controllers\\ReportHunian.php', 6, [...])
+ 2 APPPATH\Controllers\ReportHunian.php(6): require()
+ 3 SYSTEMPATH\Router\AutoRouter.php(161): include_once('C:\\2023project\\aparus3\\app\\Controllers\\ReportHunian.php')
+ 4 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('reportHunian/penghuni', 'get')
+ 5 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('reportHunian/penghuni')
+ 6 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('reportHunian/penghuni')
+ 7 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2024-07-29 14:15:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 14:15:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 14:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 14:16:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 14:22:43 --> require(C:\2023project\aparus3\app\Controllers/../vendor/autoload.php): failed to open stream: No such file or directory
+in APPPATH\Controllers\ReportHunian.php on line 6.
+ 1 APPPATH\Controllers\ReportHunian.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(C:\\2023project\\aparus3\\app\\Controllers/../vendor/autoload.php): failed to open stream: No such file or directory', 'C:\\2023project\\aparus3\\app\\Controllers\\ReportHunian.php', 6, [...])
+ 2 APPPATH\Controllers\ReportHunian.php(6): require()
+ 3 SYSTEMPATH\Router\AutoRouter.php(161): include_once('C:\\2023project\\aparus3\\app\\Controllers\\ReportHunian.php')
+ 4 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('reportHunian/createExcel', 'get')
+ 5 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('reportHunian/createExcel')
+ 6 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('reportHunian/createExcel')
+ 7 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+CRITICAL - 2024-07-29 14:24:36 --> require(C:\2023project\aparus3\app\Controllers/../vendor/autoload.php): failed to open stream: No such file or directory
+in APPPATH\Controllers\ReportHunian.php on line 6.
+ 1 APPPATH\Controllers\ReportHunian.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(C:\\2023project\\aparus3\\app\\Controllers/../vendor/autoload.php): failed to open stream: No such file or directory', 'C:\\2023project\\aparus3\\app\\Controllers\\ReportHunian.php', 6, [...])
+ 2 APPPATH\Controllers\ReportHunian.php(6): require()
+ 3 SYSTEMPATH\Router\AutoRouter.php(161): include_once('C:\\2023project\\aparus3\\app\\Controllers\\ReportHunian.php')
+ 4 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('reportHunian/createExcel', 'get')
+ 5 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('reportHunian/createExcel')
+ 6 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('reportHunian/createExcel')
+ 7 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2024-07-29 14:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 14:33:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 14:33:32 --> Undefined property: App\Controllers\ReportHunian::$EmployeeModel
+in APPPATH\Controllers\ReportHunian.php on line 74.
+ 1 APPPATH\Controllers\ReportHunian.php(74): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\ReportHunian::$EmployeeModel', 'C:\\2023project\\aparus3\\app\\Controllers\\ReportHunian.php', 74, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->createExcel()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2024-07-29 14:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 14:33:51 --> Undefined index: id
+in APPPATH\Controllers\ReportHunian.php on line 85.
+ 1 APPPATH\Controllers\ReportHunian.php(85): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id', 'C:\\2023project\\aparus3\\app\\Controllers\\ReportHunian.php', 85, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->createExcel()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2024-07-29 14:35:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 14:35:58 --> fopen(upload/employee.xlsx): failed to open stream: No such file or directory
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php on line 128.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(upload/employee.xlsx): failed to open stream: No such file or directory', 'C:\\2023project\\aparus3\\vendor\\phpoffice\\phpspreadsheet\\src\\PhpSpreadsheet\\Writer\\BaseWriter.php', 128, [...])
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php(128): fopen('upload/employee.xlsx', 'wb')
+ 3 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Xlsx.php(546): PhpOffice\PhpSpreadsheet\Writer\BaseWriter->openFileHandle('upload/employee.xlsx')
+ 4 APPPATH\Controllers\ReportHunian.php(94): PhpOffice\PhpSpreadsheet\Writer\Xlsx->save('upload/employee.xlsx')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->createExcel()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2024-07-29 14:37:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 14:37:10 --> The route for "http://localhost:8080//uploadss/employee.xlsx" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost:8080//uploadss/employee.xlsx')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\ReportHunian.php(96): redirect('http://localhost:8080//uploadss/employee.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->createExcel()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2024-07-29 14:37:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 14:37:29 --> The route for "http://localhost:8080//uploads/employee.xlsx" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost:8080//uploads/employee.xlsx')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\ReportHunian.php(96): redirect('http://localhost:8080//uploads/employee.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->createExcel()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2024-07-29 14:37:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 14:37:40 --> fopen(upload/employee.xlsx): failed to open stream: No such file or directory
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php on line 128.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(upload/employee.xlsx): failed to open stream: No such file or directory', 'C:\\2023project\\aparus3\\vendor\\phpoffice\\phpspreadsheet\\src\\PhpSpreadsheet\\Writer\\BaseWriter.php', 128, [...])
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php(128): fopen('upload/employee.xlsx', 'wb')
+ 3 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Xlsx.php(546): PhpOffice\PhpSpreadsheet\Writer\BaseWriter->openFileHandle('upload/employee.xlsx')
+ 4 APPPATH\Controllers\ReportHunian.php(94): PhpOffice\PhpSpreadsheet\Writer\Xlsx->save('upload/employee.xlsx')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->createExcel()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2024-07-29 14:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 14:37:54 --> The route for "http://localhost:8080//uploads/employee.xlsx" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost:8080//uploads/employee.xlsx')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\ReportHunian.php(96): redirect('http://localhost:8080//uploads/employee.xlsx')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->createExcel()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2024-07-29 14:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 14:39:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 15:10:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 15:11:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 15:12:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 15:14:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 15:19:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 15:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 15:24:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 15:24:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

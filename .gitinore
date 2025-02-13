@@ -1,0 +1,55 @@
+# Ignore environment files
+
+.env
+.env.\*
+
+# Ignore Composer vendor directory
+
+/vendor/
+
+# Ignore Node.js dependencies (if using npm)
+
+node_modules/
+
+# Ignore IDE and editor settings
+
+.idea/
+.vscode/
+_.swp
+_.swo
+
+# Ignore system and application cache
+
+writable/cache/\*
+!writable/cache/index.html
+
+# Ignore session files
+
+writable/session/\*
+!writable/session/index.html
+
+# Ignore logs
+
+writable/logs/\*
+!writable/logs/index.html
+
+# Ignore temporary files
+
+writable/temp/\*
+!writable/temp/index.html
+
+# Ignore file uploads (optional, based on project needs)
+
+writable/uploads/\*
+!writable/uploads/index.html
+
+# Ignore PHPStorm project files
+
+_.iml
+_.iws
+
+# Ignore system files
+
+.DS_Store
+Thumbs.db
+aparus3.zip
