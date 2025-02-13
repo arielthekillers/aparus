@@ -1,52 +1,178 @@
-# Aparus
+# Aparus - Apartment Management System
 
-Aparus is a comprehensive application designed for managing apartment buildings (Rusunawa). It provides a complete system for managing residents, handling payments, and addressing complaints. The application is built to simplify the administration of apartment facilities and services.
+Welcome to Aparus! 👋 This is a user-friendly system designed to make apartment (Rusunawa) management easier and more efficient.
 
-## Features
+## 🌟 What Can This App Do?
 
-- **Pendaftaran Penghuni**: Resident registration system.
-- **Manajemen Penghuni**: Manage resident data, including updates and status changes.
-- **Pengaduan Rusun**: A platform for residents to submit complaints or issues within the apartment complex.
-- **Tagihan Bulanan**: Monthly billing and invoice management for residents.
-- **Kasir Bayar**: Cashier interface for processing payments.
-- **Virtual Akun**: Virtual account management for payments.
-- **WA Gateway**: Integration with WhatsApp for communication and notifications.
+### 👥 Resident Management
 
-## Technologies Used
+- **Register New Residents** - Easy registration process for new tenants
+- **Manage Resident Data** - Keep track of all your residents' information
+- **Update Resident Status** - Active/Inactive status management
 
-- **CodeIgniter 4**: PHP framework for building the application.
-- **MySQL**: Database management system for storing resident and transaction data.
-- **Velzon Premium**: A premium admin template for the front-end interface.
-- **Ruangwa**: (Explain what this is if it's a specific library or tool)
+### 💰 Payment & Billing
 
-## Installation
+- **Monthly Billing** - Automatically generate monthly bills
+- **Payment Processing** - Easy-to-use cashier interface
+- **Virtual Account** - Support for virtual account payments
+- **Payment History** - Track all payment records
 
-1. Clone this repository to your local machine.
-2. Set up your web server (Apache/Nginx) and configure PHP.
-3. Install dependencies using Composer: `composer install`.
-4. Set up the `.env` file for environment variables (e.g., database credentials).
-5. Import the provided SQL schema into your MySQL database.
-6. Access the application in your browser at `http://localhost/` or your configured domain.
+### 🏠 Apartment Management
 
-## Usage
+- **Room Management** - Keep track of room availability and assignments
+- **Complaint Handling** - Process and track resident complaints
+- **Maintenance Requests** - Handle maintenance and repair requests
 
-Once set up, you can:
+### 📱 Communication
 
-- Register new residents, manage their data, and process complaints.
-- Handle monthly billing and payment processing through the cashier interface.
-- Use the virtual account feature for payment tracking.
-- Communicate with residents via WhatsApp gateway for notifications and support.
+- **WhatsApp Integration** - Send notifications and updates via WhatsApp
+- **Automated Reminders** - Payment reminders and important announcements
+- **Bulk Messaging** - Send messages to multiple residents at once
 
-## Contributing
+## 🚀 Getting Started
 
-Feel free to fork this project and submit pull requests. For bug reports or feature suggestions, open an issue in the repository.
+### System Requirements
 
-## License
+- PHP 7.4 or higher
+- MySQL 5.7 or higher
+- Composer
+- Web Server (Apache/Nginx)
 
-This project is licensed under the [MIT License](LICENSE).
+### Installation Steps
 
-## Contact
+1. **Clone the Repository**
 
-For questions or feedback, reach out to: [arielthekillers@gmail.com](mailto:arielthekillers@gmail.com)
+   ```bash
+   git clone https://github.com/yourusername/aparus.git
+   cd aparus
+   ```
 
-# aparus
+2. **Install Dependencies**
+
+   ```bash
+   composer install
+   ```
+
+3. **Set Up Environment**
+
+   ```bash
+   # Copy environment file
+   cp env .env
+
+   # Edit .env file with your database settings
+   database.default.hostname = localhost
+   database.default.database = your_database_name
+   database.default.username = your_username
+   database.default.password = your_password
+   database.default.DBDriver = MySQLi
+   database.default.DBPrefix = aprs_
+   ```
+
+4. **Set Up Database**
+
+   ```bash
+   # Run migrations
+   php spark migrate
+
+   # Run seeder (if you want sample data)
+   php spark db:seed InitialSeeder
+   ```
+
+5. **Set Folder Permissions**
+
+   ```bash
+   chmod -R 777 writable/
+   ```
+
+6. **Start the Application**
+
+   ```bash
+   php spark serve
+   ```
+
+   Visit `http://localhost:8080` in your browser
+
+### Default Login
+
+- Username: `admin`
+- Password: `admin123`
+- Please change these credentials immediately after first login!
+
+## 📱 WhatsApp Integration Setup
+
+1. Set up your WhatsApp gateway credentials in `.env`:
+
+   ```
+   WA_GATEWAY_URL = 'your_gateway_url'
+   WA_API_KEY = 'your_api_key'
+   ```
+
+2. Test the connection through the admin panel
+
+## 💡 Tips for Use
+
+- Regularly backup your database
+- Keep your PHP and CodeIgniter versions updated
+- Monitor the `writable/logs` directory for any issues
+- Use the bulk message feature wisely to avoid spamming residents
+
+## �� Contact & Support
+
+### Primary Contact
+
+**Ariel Kristiawan**
+
+- 📧 Email: arielthekillers@gmail.com
+- 💼 Role: Lead Developer
+- 🌐 Location: Bontang, Indonesia
+
+### How to Get Help
+
+1. **Technical Issues**
+
+   - Send email with subject: `[APARUS-TECH] Your Issue`
+   - Include your server environment details
+   - Attach relevant error logs
+
+2. **Feature Requests**
+
+   - Send email with subject: `[APARUS-FEATURE] Your Request`
+   - Clearly describe the feature you need
+   - Explain your use case
+
+3. **Bug Reports**
+
+   - Send email with subject: `[APARUS-BUG] Bug Description`
+   - Include steps to reproduce
+   - Attach screenshots if possible
+
+4. **General Inquiries**
+   - Send email with subject: `[APARUS-INFO] Your Question`
+   - We typically respond within 24-48 business hours
+
+### Response Times
+
+- Critical issues: 24 hours
+- General questions: 2-3 business days
+- Feature requests: 5-7 business days
+
+### Working Hours
+
+- Monday - Friday
+- 09:00 - 17:00 (GMT+8)
+- Indonesia Time Zone
+
+## �� Security Notes
+
+- Change default admin credentials immediately
+- Regularly update your password
+- Keep your `.env` file secure
+- Monitor login attempts through the admin panel
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Made with ❤️ for better apartment management

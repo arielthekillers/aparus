@@ -10,88 +10,93 @@ class CreateInvoiceTables extends Migration
     {
         // Tabel Invoice
         $this->forge->addField([
-            'invoice_id' => [
+            'inv_id' => [
                 'type' => 'INT',
-                'constraint' => 11,
+                'constraint' => 5,
                 'unsigned' => true,
                 'auto_increment' => true,
             ],
-            'nomor_invoice' => [
+            'inv_nomor' => [
                 'type' => 'VARCHAR',
-                'constraint' => 20,
-                'unique' => true,
+                'constraint' => 15,
             ],
-            'kode_penghuni' => [
-                'type' => 'VARCHAR',
-                'constraint' => 20,
+            'inv_kontrak' => [
+                'type' => 'INT',
+                'constraint' => 5,
+                'unsigned' => true,
             ],
-            'tanggal_invoice' => [
-                'type' => 'DATE',
-            ],
-            'total_tagihan' => [
+            'inv_total' => [
                 'type' => 'DECIMAL',
-                'constraint' => '10,2',
+                'constraint' => '9,2',
             ],
-            'status_pembayaran' => [
-                'type' => 'ENUM',
-                'constraint' => ['pending', 'partial', 'paid'],
-                'default' => 'pending',
-            ],
-            'created_at' => [
-                'type' => 'TIMESTAMP',
-                'null' => false,
-            ],
-            'updated_at' => [
-                'type' => 'TIMESTAMP',
-                'null' => false,
-            ],
-        ]);
-        $this->forge->addKey('invoice_id', true);
-        $this->forge->addForeignKey('kode_penghuni', 'aprs_penghuni', 'kode_penghuni', 'CASCADE', 'CASCADE');
-        $this->forge->createTable('aprs_invoice');
-
-        // Tabel Invoice Details
-        $this->forge->addField([
-            'detail_id' => [
+            'inv_payment' => [
                 'type' => 'INT',
-                'constraint' => 11,
-                'unsigned' => true,
-                'auto_increment' => true,
+                'constraint' => 2,
             ],
-            'invoice_id' => [
-                'type' => 'INT',
-                'constraint' => 11,
-                'unsigned' => true,
-            ],
-            'jenis_tagihan' => [
+            'inv_payment_method' => [
                 'type' => 'VARCHAR',
-                'constraint' => 50,
+                'constraint' => 30,
             ],
-            'deskripsi' => [
-                'type' => 'TEXT',
+            'inv_payment_va' => [
+                'type' => 'VARCHAR',
+                'constraint' => 25,
+            ],
+            'inv_payment_by' => [
+                'type' => 'INT',
+                'constraint' => 25,
+                'unsigned' => true,
+            ],
+            'inv_payment_at' => [
+                'type' => 'TIMESTAMP',
                 'null' => true,
             ],
-            'jumlah' => [
-                'type' => 'DECIMAL',
-                'constraint' => '10,2',
-            ],
-            'created_at' => [
+            'inv_created_at' => [
                 'type' => 'TIMESTAMP',
                 'null' => false,
+                'default' => new \CodeIgniter\Database\RawSql('CURRENT_TIMESTAMP'),
             ],
-            'updated_at' => [
+            'inv_updated_at' => [
                 'type' => 'TIMESTAMP',
-                'null' => false,
+                'null' => true,
+                'default' => new \CodeIgniter\Database\RawSql('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'),
             ],
         ]);
-        $this->forge->addKey('detail_id', true);
-        $this->forge->addForeignKey('invoice_id', 'aprs_invoice', 'invoice_id', 'CASCADE', 'CASCADE');
-        $this->forge->createTable('aprs_invoice_details');
+
+        // Primary Key
+        $this->forge->addKey('inv_id', true);
+
+        // Indexes
+        $this->forge->addKey('inv_nomor', false);
+        $this->forge->addKey('inv_kontrak', false);
+
+        // Foreign Keys
+        $this->forge->addForeignKey('inv_kontrak', 'aprs_kontrak', 'kontrak_id', 'CASCADE', 'CASCADE');
+        $this->forge->addForeignKey('inv_payment_by', 'aprs_user', 'user_id', 'CASCADE', 'CASCADE');
+
+        // Create Table
+        $this->forge->createTable('aprs_invoice');
+
+        // Create Trigger
+        $this->db->query("
+            CREATE TRIGGER OnSuccessPayment 
+            BEFORE UPDATE ON aprs_invoice 
+            FOR EACH ROW 
+            BEGIN
+                IF (NEW.inv_payment = 2) THEN
+                    UPDATE aprs_invoice_details 
+                    SET inv_detail_status = 'Lunas' 
+                    WHERE inv_detail_parent = OLD.inv_nomor;
+                END IF;
+            END
+        ");
     }
 
     public function down()
     {
-        $this->forge->dropTable('aprs_invoice_details');
+        // Drop trigger first
+        $this->db->query("DROP TRIGGER IF EXISTS OnSuccessPayment");
+
+        // Drop table
         $this->forge->dropTable('aprs_invoice');
     }
 }

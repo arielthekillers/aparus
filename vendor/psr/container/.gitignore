@@ -1,3 +1,79 @@
+# Environment files
+.env
+.env.*
+
+# Composer
+/vendor/
 composer.lock
 composer.phar
-/vendor/
+
+# Node.js
+node_modules/
+
+# IDE and editor settings
+.idea/
+.vscode/
+*.swp
+*.swo
+.php-cs-fixer.cache
+.php-cs-fixer.php
+.phpunit.result.cache
+*.sublime-*
+
+# CodeIgniter writable directory
+writable/cache/*
+!writable/cache/index.html
+writable/debugbar/*
+!writable/debugbar/.gitkeep
+writable/logs/*
+!writable/logs/index.html
+writable/session/*
+!writable/session/index.html
+writable/temp/*
+!writable/temp/index.html
+writable/uploads/*
+!writable/uploads/index.html
+
+# PHPStorm project files
+*.iml
+*.iws
+*.ipr
+
+# Testing and documentation
+/build/
+/phpunit.xml
+/phpunit.xml.dist
+/coverage/
+/docs/
+*.cache
+*.neon
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.zip
+*.rar
+*.tar
+*.gz
+
+# Build tools
+.php_cs.cache
+.php_cs.dist
+.phpdoc/
+psalm.xml
+.psalm/
+
+# Public assets that should be ignored
+public/assets/libs/@ckeditor/
+public/assets/libs/apexcharts/
+public/assets/libs/chart.js/
+public/assets/libs/choices.js/
+public/assets/libs/cleave.js/
+public/assets/libs/dropzone/
+public/assets/libs/flatpickr/
+public/assets/libs/glightbox/
+public/assets/libs/gmaps/
+public/assets/libs/isotope-layout/
+public/assets/lang/*
+public/assets/images/svg/crypto-icons/
