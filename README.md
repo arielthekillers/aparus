@@ -43,7 +43,7 @@ Welcome to Aparus! 👋 This is a user-friendly system designed to make apartmen
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/aparus.git
+   git clone https://github.com/arielthekillers/aparus.git
    cd aparus
    ```
 
