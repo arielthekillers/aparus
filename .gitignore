@@ -1,6 +1,7 @@
 # Ignore environment files
 
 .env
+.envcopy
 .env.\*
 
 # Ignore Composer vendor directory
