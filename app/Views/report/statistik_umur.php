@@ -53,12 +53,17 @@
                                                                 </thead>
                                                                 <tbody>
                                                                     <tr>
-                                                                        <td>Balita (0-5 tahun)</td>
+                                                                        <td>Balita (1-5 tahun)</td>
                                                                         <td class="text-end"><?= $stat->balita ?></td>
                                                                         <td class="text-end"><?= $stat->total > 0 ? number_format(($stat->balita / $stat->total) * 100, 1) : '0.0' ?>%</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td>Remaja (6-16 tahun)</td>
+                                                                        <td>Anak-anak (6-11 tahun)</td>
+                                                                        <td class="text-end"><?= $stat->anak ?></td>
+                                                                        <td class="text-end"><?= $stat->total > 0 ? number_format(($stat->anak / $stat->total) * 100, 1) : '0.0' ?>%</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Remaja (12-16 tahun)</td>
                                                                         <td class="text-end"><?= $stat->remaja ?></td>
                                                                         <td class="text-end"><?= $stat->total > 0 ? number_format(($stat->remaja / $stat->total) * 100, 1) : '0.0' ?>%</td>
                                                                     </tr>

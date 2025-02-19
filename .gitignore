@@ -39,6 +39,10 @@ writable/logs/\*
 writable/temp/\*
 !writable/temp/index.html
 
+# Ignore debugbar files
+writable/debugbar/*
+!writable/debugbar/.gitkeep
+
 # Ignore file uploads (optional, based on project needs)
 
 writable/uploads/\*

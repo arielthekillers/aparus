@@ -86,35 +86,33 @@ class ReportHunian_model extends Model
         $builder->select([
             'master_rusun.rusun_id',
             'master_rusun.rusun_nama as nama_rusun',
-            // Balita (0-5 tahun)
-            'SUM(CASE 
-                WHEN TIMESTAMPDIFF(YEAR, aprs_penghuni.tanggal_lahir, CURDATE()) <= 5 THEN 1 
-                WHEN TIMESTAMPDIFF(YEAR, ak.tanggal_lahir, CURDATE()) <= 5 THEN 1
-                ELSE 0 
+            // Balita (1-5 tahun)
+            'COUNT(DISTINCT CASE 
+                WHEN TIMESTAMPDIFF(YEAR, aprs_penghuni.tanggal_lahir, CURDATE()) BETWEEN 1 AND 5 THEN aprs_penghuni.kode_penghuni
+                WHEN TIMESTAMPDIFF(YEAR, ak.tanggal_lahir, CURDATE()) BETWEEN 1 AND 5 THEN ak.id_anggotakeluarga
             END) as balita',
-            // Remaja (6-16 tahun)
-            'SUM(CASE 
-                WHEN TIMESTAMPDIFF(YEAR, aprs_penghuni.tanggal_lahir, CURDATE()) BETWEEN 6 AND 16 THEN 1 
-                WHEN TIMESTAMPDIFF(YEAR, ak.tanggal_lahir, CURDATE()) BETWEEN 6 AND 16 THEN 1
-                ELSE 0 
+            // Anak-anak (6-11 tahun)
+            'COUNT(DISTINCT CASE 
+                WHEN TIMESTAMPDIFF(YEAR, aprs_penghuni.tanggal_lahir, CURDATE()) BETWEEN 6 AND 11 THEN aprs_penghuni.kode_penghuni
+                WHEN TIMESTAMPDIFF(YEAR, ak.tanggal_lahir, CURDATE()) BETWEEN 6 AND 11 THEN ak.id_anggotakeluarga
+            END) as anak',
+            // Remaja (12-16 tahun)
+            'COUNT(DISTINCT CASE 
+                WHEN TIMESTAMPDIFF(YEAR, aprs_penghuni.tanggal_lahir, CURDATE()) BETWEEN 12 AND 16 THEN aprs_penghuni.kode_penghuni
+                WHEN TIMESTAMPDIFF(YEAR, ak.tanggal_lahir, CURDATE()) BETWEEN 12 AND 16 THEN ak.id_anggotakeluarga
             END) as remaja',
             // Dewasa (17-59 tahun)
-            'SUM(CASE 
-                WHEN TIMESTAMPDIFF(YEAR, aprs_penghuni.tanggal_lahir, CURDATE()) BETWEEN 17 AND 59 THEN 1 
-                WHEN TIMESTAMPDIFF(YEAR, ak.tanggal_lahir, CURDATE()) BETWEEN 17 AND 59 THEN 1
-                ELSE 0 
+            'COUNT(DISTINCT CASE 
+                WHEN TIMESTAMPDIFF(YEAR, aprs_penghuni.tanggal_lahir, CURDATE()) BETWEEN 17 AND 59 THEN aprs_penghuni.kode_penghuni
+                WHEN TIMESTAMPDIFF(YEAR, ak.tanggal_lahir, CURDATE()) BETWEEN 17 AND 59 THEN ak.id_anggotakeluarga
             END) as dewasa',
             // Lansia (>= 60 tahun)
-            'SUM(CASE 
-                WHEN TIMESTAMPDIFF(YEAR, aprs_penghuni.tanggal_lahir, CURDATE()) >= 60 THEN 1 
-                WHEN TIMESTAMPDIFF(YEAR, ak.tanggal_lahir, CURDATE()) >= 60 THEN 1
-                ELSE 0 
-            END) as lansia',
-            // Total
             'COUNT(DISTINCT CASE 
-                WHEN aprs_penghuni.kode_penghuni IS NOT NULL THEN aprs_penghuni.kode_penghuni
-                WHEN ak.id_anggotakeluarga IS NOT NULL THEN ak.id_anggotakeluarga 
-            END) as total'
+                WHEN TIMESTAMPDIFF(YEAR, aprs_penghuni.tanggal_lahir, CURDATE()) >= 60 THEN aprs_penghuni.kode_penghuni
+                WHEN TIMESTAMPDIFF(YEAR, ak.tanggal_lahir, CURDATE()) >= 60 THEN ak.id_anggotakeluarga
+            END) as lansia',
+            // Total (penghuni + anggota keluarga)
+            '(COUNT(DISTINCT aprs_penghuni.kode_penghuni) + COUNT(DISTINCT ak.id_anggotakeluarga)) as total'
         ]);
 
         $builder->join('aprs_penghuni', 'master_rusun.rusun_id = aprs_penghuni.rusuntujuan', 'LEFT');
