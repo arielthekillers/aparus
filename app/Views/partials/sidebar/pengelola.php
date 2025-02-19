@@ -177,6 +177,16 @@
                                 <a href="<?= site_url('reportHunian/statistikGender'); ?>" class="nav-link" data-key="t-gender"> Statistik Per Jenis Kelamin</a>
                             </li>
                         </ul>
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="<?= site_url('reportHunian/statistikUmur'); ?>" class="nav-link" data-key="t-umur"> Statistik Per Umur</a>
+                            </li>
+                        </ul>
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="<?= site_url('reportHunian/statistikKamar'); ?>" class="nav-link" data-key="t-kamar"> Statistik Kamar</a>
+                            </li>
+                        </ul>
                     </div>
                 </li>
 

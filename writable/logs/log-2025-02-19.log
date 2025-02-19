@@ -1,0 +1,871 @@
+INFO - 2025-02-19 14:48:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 14:48:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Auth::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 14:48:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 14:48:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 14:48:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 14:48:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\Auth::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 14:48:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 14:48:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\Auth::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 14:48:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 14:48:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Auth::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 14:48:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 14:48:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Shortcut::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\View\Cell.php(96): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\Common.php(1206): CodeIgniter\View\Cell->render('App\\Controllers\\Shortcut::loadShortcut', [], 0, 'AppControllersShortcutloadShortcut40cd750bba9870f18aada2478b24840a')
+ 3 APPPATH\Views\partials\topbar.php(157): view_cell('App\\Controllers\\Shortcut::loadShortcut')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\topbar.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/topbar', null, true)
+ 7 APPPATH\Views\partials\menu.php(1): CodeIgniter\View\View->include('partials/topbar')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\menu.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/menu', null, true)
+11 APPPATH\Views\dashboard.php(16): CodeIgniter\View\View->include('partials/menu')
+12 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\dashboard.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard', [], true)
+15 APPPATH\Controllers\Dashboard.php(12): view('dashboard', [...])
+16 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->index()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 14:48:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 14:48:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 14:48:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 14:48:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\ReportHunian::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+WARNING - 2025-02-19 14:48:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Shortcut::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\View\Cell.php(96): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\Common.php(1206): CodeIgniter\View\Cell->render('App\\Controllers\\Shortcut::loadShortcut', [], 0, 'AppControllersShortcutloadShortcut40cd750bba9870f18aada2478b24840a')
+ 3 APPPATH\Views\partials\topbar.php(157): view_cell('App\\Controllers\\Shortcut::loadShortcut')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\topbar.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/topbar', null, true)
+ 7 APPPATH\Views\partials\menu.php(1): CodeIgniter\View\View->include('partials/topbar')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\menu.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/menu', null, true)
+11 APPPATH\Views\report\statistik_gender.php(11): CodeIgniter\View\View->include('partials/menu')
+12 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\report\\statistik_gender.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('report/statistik_gender', [], true)
+15 APPPATH\Controllers\ReportHunian.php(102): view('report/statistik_gender', [...])
+16 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->statistikGender()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 14:48:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 14:48:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 14:48:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 14:48:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\ReportHunian::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+WARNING - 2025-02-19 14:48:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\Shortcut::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\View\Cell.php(96): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\Common.php(1206): CodeIgniter\View\Cell->render('App\\Controllers\\Shortcut::loadShortcut', [], 0, 'AppControllersShortcutloadShortcut40cd750bba9870f18aada2478b24840a')
+ 3 APPPATH\Views\partials\topbar.php(157): view_cell('App\\Controllers\\Shortcut::loadShortcut')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\topbar.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/topbar', null, true)
+ 7 APPPATH\Views\partials\menu.php(1): CodeIgniter\View\View->include('partials/topbar')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\menu.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/menu', null, true)
+11 APPPATH\Views\report\statistik_umur.php(11): CodeIgniter\View\View->include('partials/menu')
+12 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\report\\statistik_umur.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('report/statistik_umur', [], true)
+15 APPPATH\Controllers\ReportHunian.php(116): view('report/statistik_umur', [...])
+16 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->statistikUmur()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 14:48:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 14:48:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 14:49:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 14:49:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\ReportHunian::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+WARNING - 2025-02-19 14:49:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Shortcut::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\View\Cell.php(96): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\Common.php(1206): CodeIgniter\View\Cell->render('App\\Controllers\\Shortcut::loadShortcut', [], 0, 'AppControllersShortcutloadShortcut40cd750bba9870f18aada2478b24840a')
+ 3 APPPATH\Views\partials\topbar.php(157): view_cell('App\\Controllers\\Shortcut::loadShortcut')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\topbar.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/topbar', null, true)
+ 7 APPPATH\Views\partials\menu.php(1): CodeIgniter\View\View->include('partials/topbar')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\menu.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/menu', null, true)
+11 APPPATH\Views\report\penghuni.php(11): CodeIgniter\View\View->include('partials/menu')
+12 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\report\\penghuni.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('report/penghuni', [], true)
+15 APPPATH\Controllers\ReportHunian.php(61): view('report/penghuni', [...])
+16 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->penghuni()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 14:49:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 14:49:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 14:49:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 14:49:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 14:49:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 14:49:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\ReportHunian::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 14:49:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 14:49:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\ReportHunian::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+WARNING - 2025-02-19 14:49:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Shortcut::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\View\Cell.php(96): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\Common.php(1206): CodeIgniter\View\Cell->render('App\\Controllers\\Shortcut::loadShortcut', [], 0, 'AppControllersShortcutloadShortcut40cd750bba9870f18aada2478b24840a')
+ 3 APPPATH\Views\partials\topbar.php(157): view_cell('App\\Controllers\\Shortcut::loadShortcut')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\topbar.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/topbar', null, true)
+ 7 APPPATH\Views\partials\menu.php(1): CodeIgniter\View\View->include('partials/topbar')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\menu.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/menu', null, true)
+11 APPPATH\Views\report\penghuni.php(11): CodeIgniter\View\View->include('partials/menu')
+12 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\report\\penghuni.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('report/penghuni', [], true)
+15 APPPATH\Controllers\ReportHunian.php(61): view('report/penghuni', [...])
+16 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->penghuni()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 14:49:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 14:49:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 14:49:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 14:49:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 14:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 14:49:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\ReportHunian::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+WARNING - 2025-02-19 14:49:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\Shortcut::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\View\Cell.php(96): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\Common.php(1206): CodeIgniter\View\Cell->render('App\\Controllers\\Shortcut::loadShortcut', [], 0, 'AppControllersShortcutloadShortcut40cd750bba9870f18aada2478b24840a')
+ 3 APPPATH\Views\partials\topbar.php(157): view_cell('App\\Controllers\\Shortcut::loadShortcut')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\topbar.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/topbar', null, true)
+ 7 APPPATH\Views\partials\menu.php(1): CodeIgniter\View\View->include('partials/topbar')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\menu.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/menu', null, true)
+11 APPPATH\Views\report\penghuni.php(11): CodeIgniter\View\View->include('partials/menu')
+12 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\report\\penghuni.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('report/penghuni', [], true)
+15 APPPATH\Controllers\ReportHunian.php(61): view('report/penghuni', [...])
+16 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->penghuni()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 14:49:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 14:49:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 14:49:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 14:49:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 14:49:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 14:49:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\ReportHunian::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+WARNING - 2025-02-19 14:49:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Shortcut::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\View\Cell.php(96): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\Common.php(1206): CodeIgniter\View\Cell->render('App\\Controllers\\Shortcut::loadShortcut', [], 0, 'AppControllersShortcutloadShortcut40cd750bba9870f18aada2478b24840a')
+ 3 APPPATH\Views\partials\topbar.php(157): view_cell('App\\Controllers\\Shortcut::loadShortcut')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\topbar.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/topbar', null, true)
+ 7 APPPATH\Views\partials\menu.php(1): CodeIgniter\View\View->include('partials/topbar')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\menu.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/menu', null, true)
+11 APPPATH\Views\report\statistik_gender.php(11): CodeIgniter\View\View->include('partials/menu')
+12 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\report\\statistik_gender.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('report/statistik_gender', [], true)
+15 APPPATH\Controllers\ReportHunian.php(102): view('report/statistik_gender', [...])
+16 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->statistikGender()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 14:49:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 14:49:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 14:49:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 14:49:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\ReportHunian::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+WARNING - 2025-02-19 14:49:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Shortcut::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\View\Cell.php(96): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\Common.php(1206): CodeIgniter\View\Cell->render('App\\Controllers\\Shortcut::loadShortcut', [], 0, 'AppControllersShortcutloadShortcut40cd750bba9870f18aada2478b24840a')
+ 3 APPPATH\Views\partials\topbar.php(157): view_cell('App\\Controllers\\Shortcut::loadShortcut')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\topbar.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/topbar', null, true)
+ 7 APPPATH\Views\partials\menu.php(1): CodeIgniter\View\View->include('partials/topbar')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\menu.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/menu', null, true)
+11 APPPATH\Views\report\statistik_umur.php(11): CodeIgniter\View\View->include('partials/menu')
+12 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\report\\statistik_umur.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('report/statistik_umur', [], true)
+15 APPPATH\Controllers\ReportHunian.php(116): view('report/statistik_umur', [...])
+16 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->statistikUmur()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 14:49:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 14:49:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 14:57:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 14:57:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Auth::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 14:57:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 14:57:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Shortcut::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\View\Cell.php(96): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\Common.php(1206): CodeIgniter\View\Cell->render('App\\Controllers\\Shortcut::loadShortcut', [], 0, 'AppControllersShortcutloadShortcut40cd750bba9870f18aada2478b24840a')
+ 3 APPPATH\Views\partials\topbar.php(157): view_cell('App\\Controllers\\Shortcut::loadShortcut')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\topbar.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/topbar', null, true)
+ 7 APPPATH\Views\partials\menu.php(1): CodeIgniter\View\View->include('partials/topbar')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\menu.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/menu', null, true)
+11 APPPATH\Views\dashboard.php(16): CodeIgniter\View\View->include('partials/menu')
+12 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\dashboard.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard', [], true)
+15 APPPATH\Controllers\Dashboard.php(12): view('dashboard', [...])
+16 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->index()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 14:57:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 14:57:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 15:01:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 15:01:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Shortcut::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\View\Cell.php(96): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\Common.php(1206): CodeIgniter\View\Cell->render('App\\Controllers\\Shortcut::loadShortcut', [], 0, 'AppControllersShortcutloadShortcut40cd750bba9870f18aada2478b24840a')
+ 3 APPPATH\Views\partials\topbar.php(157): view_cell('App\\Controllers\\Shortcut::loadShortcut')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\topbar.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/topbar', null, true)
+ 7 APPPATH\Views\partials\menu.php(1): CodeIgniter\View\View->include('partials/topbar')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\menu.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/menu', null, true)
+11 APPPATH\Views\dashboard.php(16): CodeIgniter\View\View->include('partials/menu')
+12 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\dashboard.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard', [], true)
+15 APPPATH\Controllers\Dashboard.php(12): view('dashboard', [...])
+16 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->index()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 15:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 15:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 15:02:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 15:02:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\Shortcut::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\View\Cell.php(96): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\Common.php(1206): CodeIgniter\View\Cell->render('App\\Controllers\\Shortcut::loadShortcut', [], 0, 'AppControllersShortcutloadShortcut40cd750bba9870f18aada2478b24840a')
+ 3 APPPATH\Views\partials\topbar.php(157): view_cell('App\\Controllers\\Shortcut::loadShortcut')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\topbar.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/topbar', null, true)
+ 7 APPPATH\Views\partials\menu.php(1): CodeIgniter\View\View->include('partials/topbar')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\menu.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/menu', null, true)
+11 APPPATH\Views\dashboard.php(16): CodeIgniter\View\View->include('partials/menu')
+12 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\dashboard.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard', [], true)
+15 APPPATH\Controllers\Dashboard.php(12): view('dashboard', [...])
+16 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->index()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 15:02:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 15:02:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 15:02:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 15:02:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Shortcut::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\View\Cell.php(96): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\Common.php(1206): CodeIgniter\View\Cell->render('App\\Controllers\\Shortcut::loadShortcut', [], 0, 'AppControllersShortcutloadShortcut40cd750bba9870f18aada2478b24840a')
+ 3 APPPATH\Views\partials\topbar.php(157): view_cell('App\\Controllers\\Shortcut::loadShortcut')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\topbar.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/topbar', null, true)
+ 7 APPPATH\Views\partials\menu.php(1): CodeIgniter\View\View->include('partials/topbar')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\menu.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/menu', null, true)
+11 APPPATH\Views\dashboard.php(16): CodeIgniter\View\View->include('partials/menu')
+12 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\dashboard.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard', [], true)
+15 APPPATH\Controllers\Dashboard.php(12): view('dashboard', [...])
+16 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->index()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 15:02:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 15:02:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 15:02:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 15:02:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\ReportHunian::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+CRITICAL - 2025-02-19 15:02:53 --> Call to undefined method App\Models\ReportHunian_model::getStatistikKamar
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\ReportHunian.php(125): CodeIgniter\Model->__call('getStatistikKamar', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->statistikKamar()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 15:03:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 15:03:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\ReportHunian::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+ERROR - 2025-02-19 15:03:37 --> mysqli_sql_exception: Unknown column 'mk.id_rusun' in 'on clause' in C:\2023project\aparus3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\2023project\aparus3\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `aprs_ma...', 0)
+#1 C:\2023project\aparus3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aprs_ma...')
+#2 C:\2023project\aparus3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aprs_ma...')
+#3 C:\2023project\aparus3\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `aprs_ma...', Array, false)
+#4 C:\2023project\aparus3\app\Models\ReportHunian_model.php(154): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\2023project\aparus3\app\Controllers\ReportHunian.php(125): App\Models\ReportHunian_model->getStatistikKamar(NULL)
+#6 C:\2023project\aparus3\system\CodeIgniter.php(942): App\Controllers\ReportHunian->statistikKamar()
+#7 C:\2023project\aparus3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+#8 C:\2023project\aparus3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\2023project\aparus3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\2023project\aparus3\system\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\...')
+#11 {main}
+CRITICAL - 2025-02-19 15:03:37 --> Unknown column 'mk.id_rusun' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `aprs_master_rusun`.`rusun_id`, `aprs_master_rusun`.`rusun_nama` as `nama_rusun`, COUNT(DISTINCT mk.kamar_id) as total_kamar, COUNT(DISTINCT CASE 
+                WHEN ak.status_kontrak = "aktif" THEN mk.kamar_id 
+            END) as kamar_terisi, COUNT(DISTINCT mk.kamar_id) - COUNT(DISTINCT CASE 
+                WHEN ak.status_kontrak = "aktif" THEN mk.kamar_id 
+            END) as kamar_kosong
+FROM `aprs_master_rusun`
+LEFT JOIN `aprs_master_kamar` `mk` ON `aprs_master_rusun`.`rusun_id` = `mk`.`id_rusun`
+LEFT JOIN `aprs_kontrak` `ak` ON `mk`.`kamar_id` = `ak`.`kamar` AND `ak`.`status_kontrak` = "aktif"
+GROUP BY `aprs_master_rusun`.`rusun_id`, `aprs_master_rusun`.`rusun_nama`', [], false)
+ 2 APPPATH\Models\ReportHunian_model.php(154): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\ReportHunian.php(125): App\Models\ReportHunian_model->getStatistikKamar(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->statistikKamar()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 15:04:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 15:04:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\ReportHunian::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+ERROR - 2025-02-19 15:04:41 --> mysqli_sql_exception: Unknown column 'mk.id_rusun' in 'on clause' in C:\2023project\aparus3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\2023project\aparus3\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `aprs_ma...', 0)
+#1 C:\2023project\aparus3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aprs_ma...')
+#2 C:\2023project\aparus3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aprs_ma...')
+#3 C:\2023project\aparus3\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `aprs_ma...', Array, false)
+#4 C:\2023project\aparus3\app\Models\ReportHunian_model.php(154): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\2023project\aparus3\app\Controllers\ReportHunian.php(125): App\Models\ReportHunian_model->getStatistikKamar(NULL)
+#6 C:\2023project\aparus3\system\CodeIgniter.php(942): App\Controllers\ReportHunian->statistikKamar()
+#7 C:\2023project\aparus3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+#8 C:\2023project\aparus3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\2023project\aparus3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\2023project\aparus3\system\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\...')
+#11 {main}
+CRITICAL - 2025-02-19 15:04:41 --> Unknown column 'mk.id_rusun' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `aprs_master_rusun`.`rusun_id`, `aprs_master_rusun`.`rusun_nama` as `nama_rusun`, COUNT(DISTINCT mk.kamar_id) as total_kamar, COUNT(DISTINCT CASE 
+                WHEN k.status_kontrak = "aktif" THEN mk.kamar_id 
+            END) as kamar_terisi, COUNT(DISTINCT mk.kamar_id) - COUNT(DISTINCT CASE 
+                WHEN k.status_kontrak = "aktif" THEN mk.kamar_id 
+            END) as kamar_kosong
+FROM `aprs_master_rusun`
+LEFT JOIN `aprs_master_kamar` `mk` ON `aprs_master_rusun`.`rusun_id` = `mk`.`id_rusun`
+LEFT JOIN `aprs_kontrak` `k` ON `mk`.`kamar_id` = `k`.`kamar` AND `k`.`status_kontrak` = "aktif"
+GROUP BY `aprs_master_rusun`.`rusun_id`, `aprs_master_rusun`.`rusun_nama`', [], false)
+ 2 APPPATH\Models\ReportHunian_model.php(154): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\ReportHunian.php(125): App\Models\ReportHunian_model->getStatistikKamar(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->statistikKamar()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 15:12:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 15:12:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\ReportHunian::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+ERROR - 2025-02-19 15:12:21 --> mysqli_sql_exception: Unknown column 'mk.id_rusun' in 'on clause' in C:\2023project\aparus3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\2023project\aparus3\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `aprs_ma...', 0)
+#1 C:\2023project\aparus3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aprs_ma...')
+#2 C:\2023project\aparus3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aprs_ma...')
+#3 C:\2023project\aparus3\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `aprs_ma...', Array, false)
+#4 C:\2023project\aparus3\app\Models\ReportHunian_model.php(154): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\2023project\aparus3\app\Controllers\ReportHunian.php(125): App\Models\ReportHunian_model->getStatistikKamar(NULL)
+#6 C:\2023project\aparus3\system\CodeIgniter.php(942): App\Controllers\ReportHunian->statistikKamar()
+#7 C:\2023project\aparus3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+#8 C:\2023project\aparus3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\2023project\aparus3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\2023project\aparus3\system\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\...')
+#11 {main}
+CRITICAL - 2025-02-19 15:12:21 --> Unknown column 'mk.id_rusun' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `aprs_master_rusun`.`rusun_id`, `aprs_master_rusun`.`rusun_nama` as `nama_rusun`, COUNT(DISTINCT mk.kamar_id) as total_kamar, COUNT(DISTINCT CASE 
+                WHEN k.status_kontrak = "aktif" THEN mk.kamar_id 
+            END) as kamar_terisi, COUNT(DISTINCT mk.kamar_id) - COUNT(DISTINCT CASE 
+                WHEN k.status_kontrak = "aktif" THEN mk.kamar_id 
+            END) as kamar_kosong
+FROM `aprs_master_rusun`
+LEFT JOIN `aprs_master_kamar` `mk` ON `aprs_master_rusun`.`rusun_id` = `mk`.`id_rusun`
+LEFT JOIN `aprs_kontrak` `k` ON `mk`.`kamar_id` = `k`.`kamar` AND `k`.`status_kontrak` = "aktif"
+GROUP BY `aprs_master_rusun`.`rusun_id`, `aprs_master_rusun`.`rusun_nama`', [], false)
+ 2 APPPATH\Models\ReportHunian_model.php(154): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\ReportHunian.php(125): App\Models\ReportHunian_model->getStatistikKamar(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->statistikKamar()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 19:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 19:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 19:01:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Auth::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 19:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 19:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 19:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 19:01:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\Auth::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 19:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 19:01:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\Auth::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 19:01:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 19:01:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Auth::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 19:01:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 19:01:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 19:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 19:01:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\Auth::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 19:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 19:01:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\Auth::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 19:01:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 19:01:39 --> [DEPRECATED] Creation of dynamic property App\Controllers\Auth::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 19:01:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 19:01:39 --> [DEPRECATED] Creation of dynamic property App\Controllers\Shortcut::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\View\Cell.php(96): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\Common.php(1206): CodeIgniter\View\Cell->render('App\\Controllers\\Shortcut::loadShortcut', [], 0, 'AppControllersShortcutloadShortcut40cd750bba9870f18aada2478b24840a')
+ 3 APPPATH\Views\partials\topbar.php(157): view_cell('App\\Controllers\\Shortcut::loadShortcut')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\topbar.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/topbar', null, true)
+ 7 APPPATH\Views\partials\menu.php(1): CodeIgniter\View\View->include('partials/topbar')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\menu.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/menu', null, true)
+11 APPPATH\Views\dashboard.php(16): CodeIgniter\View\View->include('partials/menu')
+12 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\dashboard.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard', [], true)
+15 APPPATH\Controllers\Dashboard.php(12): view('dashboard', [...])
+16 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->index()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 19:01:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 19:01:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 19:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 19:01:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\ReportHunian::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+ERROR - 2025-02-19 19:01:46 --> mysqli_sql_exception: Unknown column 'mk.id_rusun' in 'on clause' in C:\2023project\aparus3\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\2023project\aparus3\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `aprs_ma...', 0)
+#1 C:\2023project\aparus3\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aprs_ma...')
+#2 C:\2023project\aparus3\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aprs_ma...')
+#3 C:\2023project\aparus3\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `aprs_ma...', Array, false)
+#4 C:\2023project\aparus3\app\Models\ReportHunian_model.php(154): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\2023project\aparus3\app\Controllers\ReportHunian.php(125): App\Models\ReportHunian_model->getStatistikKamar(NULL)
+#6 C:\2023project\aparus3\system\CodeIgniter.php(942): App\Controllers\ReportHunian->statistikKamar()
+#7 C:\2023project\aparus3\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+#8 C:\2023project\aparus3\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\2023project\aparus3\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\2023project\aparus3\system\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\...')
+#11 {main}
+CRITICAL - 2025-02-19 19:01:46 --> Unknown column 'mk.id_rusun' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `aprs_master_rusun`.`rusun_id`, `aprs_master_rusun`.`rusun_nama` as `nama_rusun`, COUNT(DISTINCT mk.kamar_id) as total_kamar, COUNT(DISTINCT CASE 
+                WHEN k.status_kontrak = "aktif" THEN mk.kamar_id 
+            END) as kamar_terisi, COUNT(DISTINCT mk.kamar_id) - COUNT(DISTINCT CASE 
+                WHEN k.status_kontrak = "aktif" THEN mk.kamar_id 
+            END) as kamar_kosong
+FROM `aprs_master_rusun`
+LEFT JOIN `aprs_master_kamar` `mk` ON `aprs_master_rusun`.`rusun_id` = `mk`.`id_rusun`
+LEFT JOIN `aprs_kontrak` `k` ON `mk`.`kamar_id` = `k`.`kamar` AND `k`.`status_kontrak` = "aktif"
+GROUP BY `aprs_master_rusun`.`rusun_id`, `aprs_master_rusun`.`rusun_nama`', [], false)
+ 2 APPPATH\Models\ReportHunian_model.php(154): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\ReportHunian.php(125): App\Models\ReportHunian_model->getStatistikKamar(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->statistikKamar()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 19:06:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 19:06:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\ReportHunian::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+WARNING - 2025-02-19 19:06:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Shortcut::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\View\Cell.php(96): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\Common.php(1206): CodeIgniter\View\Cell->render('App\\Controllers\\Shortcut::loadShortcut', [], 0, 'AppControllersShortcutloadShortcut40cd750bba9870f18aada2478b24840a')
+ 3 APPPATH\Views\partials\topbar.php(157): view_cell('App\\Controllers\\Shortcut::loadShortcut')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\topbar.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/topbar', null, true)
+ 7 APPPATH\Views\partials\menu.php(1): CodeIgniter\View\View->include('partials/topbar')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\menu.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/menu', null, true)
+11 APPPATH\Views\report\statistik_kamar.php(11): CodeIgniter\View\View->include('partials/menu')
+12 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\report\\statistik_kamar.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('report/statistik_kamar', [], true)
+15 APPPATH\Controllers\ReportHunian.php(130): view('report/statistik_kamar', [...])
+16 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->statistikKamar()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 19:06:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 19:06:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 19:09:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 19:09:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\ReportHunian::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+WARNING - 2025-02-19 19:09:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Shortcut::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\View\Cell.php(96): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\Common.php(1206): CodeIgniter\View\Cell->render('App\\Controllers\\Shortcut::loadShortcut', [], 0, 'AppControllersShortcutloadShortcut40cd750bba9870f18aada2478b24840a')
+ 3 APPPATH\Views\partials\topbar.php(157): view_cell('App\\Controllers\\Shortcut::loadShortcut')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\topbar.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/topbar', null, true)
+ 7 APPPATH\Views\partials\menu.php(1): CodeIgniter\View\View->include('partials/topbar')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\menu.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/menu', null, true)
+11 APPPATH\Views\report\statistik_kamar.php(11): CodeIgniter\View\View->include('partials/menu')
+12 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\report\\statistik_kamar.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('report/statistik_kamar', [], true)
+15 APPPATH\Controllers\ReportHunian.php(130): view('report/statistik_kamar', [...])
+16 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->statistikKamar()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 19:09:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 19:09:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 19:11:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 19:11:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\ReportHunian::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+WARNING - 2025-02-19 19:11:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\Shortcut::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\View\Cell.php(96): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\Common.php(1206): CodeIgniter\View\Cell->render('App\\Controllers\\Shortcut::loadShortcut', [], 0, 'AppControllersShortcutloadShortcut40cd750bba9870f18aada2478b24840a')
+ 3 APPPATH\Views\partials\topbar.php(157): view_cell('App\\Controllers\\Shortcut::loadShortcut')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\topbar.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/topbar', null, true)
+ 7 APPPATH\Views\partials\menu.php(1): CodeIgniter\View\View->include('partials/topbar')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\menu.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/menu', null, true)
+11 APPPATH\Views\report\penghuni.php(11): CodeIgniter\View\View->include('partials/menu')
+12 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\report\\penghuni.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('report/penghuni', [], true)
+15 APPPATH\Controllers\ReportHunian.php(61): view('report/penghuni', [...])
+16 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->penghuni()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 19:11:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 19:11:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 19:11:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 19:11:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 19:11:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 19:11:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\ReportHunian::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+WARNING - 2025-02-19 19:11:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Shortcut::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\View\Cell.php(96): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\Common.php(1206): CodeIgniter\View\Cell->render('App\\Controllers\\Shortcut::loadShortcut', [], 0, 'AppControllersShortcutloadShortcut40cd750bba9870f18aada2478b24840a')
+ 3 APPPATH\Views\partials\topbar.php(157): view_cell('App\\Controllers\\Shortcut::loadShortcut')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\topbar.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/topbar', null, true)
+ 7 APPPATH\Views\partials\menu.php(1): CodeIgniter\View\View->include('partials/topbar')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\menu.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/menu', null, true)
+11 APPPATH\Views\report\statistik_gender.php(11): CodeIgniter\View\View->include('partials/menu')
+12 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\report\\statistik_gender.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('report/statistik_gender', [], true)
+15 APPPATH\Controllers\ReportHunian.php(102): view('report/statistik_gender', [...])
+16 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->statistikGender()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 19:11:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 19:11:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 19:11:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 19:11:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\ReportHunian::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+WARNING - 2025-02-19 19:11:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Shortcut::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\View\Cell.php(96): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\Common.php(1206): CodeIgniter\View\Cell->render('App\\Controllers\\Shortcut::loadShortcut', [], 0, 'AppControllersShortcutloadShortcut40cd750bba9870f18aada2478b24840a')
+ 3 APPPATH\Views\partials\topbar.php(157): view_cell('App\\Controllers\\Shortcut::loadShortcut')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\topbar.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/topbar', null, true)
+ 7 APPPATH\Views\partials\menu.php(1): CodeIgniter\View\View->include('partials/topbar')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\menu.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/menu', null, true)
+11 APPPATH\Views\report\statistik_umur.php(11): CodeIgniter\View\View->include('partials/menu')
+12 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\report\\statistik_umur.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('report/statistik_umur', [], true)
+15 APPPATH\Controllers\ReportHunian.php(116): view('report/statistik_umur', [...])
+16 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->statistikUmur()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 19:11:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 19:11:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 19:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 19:11:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\ReportHunian::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+WARNING - 2025-02-19 19:11:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Shortcut::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\View\Cell.php(96): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\Common.php(1206): CodeIgniter\View\Cell->render('App\\Controllers\\Shortcut::loadShortcut', [], 0, 'AppControllersShortcutloadShortcut40cd750bba9870f18aada2478b24840a')
+ 3 APPPATH\Views\partials\topbar.php(157): view_cell('App\\Controllers\\Shortcut::loadShortcut')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\topbar.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/topbar', null, true)
+ 7 APPPATH\Views\partials\menu.php(1): CodeIgniter\View\View->include('partials/topbar')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\menu.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/menu', null, true)
+11 APPPATH\Views\report\statistik_kamar.php(11): CodeIgniter\View\View->include('partials/menu')
+12 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\report\\statistik_kamar.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('report/statistik_kamar', [], true)
+15 APPPATH\Controllers\ReportHunian.php(130): view('report/statistik_kamar', [...])
+16 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->statistikKamar()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 19:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 19:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 19:13:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 19:13:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\ReportHunian::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+WARNING - 2025-02-19 19:13:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Shortcut::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\View\Cell.php(96): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\Common.php(1206): CodeIgniter\View\Cell->render('App\\Controllers\\Shortcut::loadShortcut', [], 0, 'AppControllersShortcutloadShortcut40cd750bba9870f18aada2478b24840a')
+ 3 APPPATH\Views\partials\topbar.php(157): view_cell('App\\Controllers\\Shortcut::loadShortcut')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\topbar.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/topbar', null, true)
+ 7 APPPATH\Views\partials\menu.php(1): CodeIgniter\View\View->include('partials/topbar')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\menu.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/menu', null, true)
+11 APPPATH\Views\report\statistik_kamar.php(11): CodeIgniter\View\View->include('partials/menu')
+12 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\report\\statistik_kamar.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('report/statistik_kamar', [], true)
+15 APPPATH\Controllers\ReportHunian.php(130): view('report/statistik_kamar', [...])
+16 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->statistikKamar()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 19:13:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 19:13:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 19:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-19 19:14:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\ReportHunian::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+WARNING - 2025-02-19 19:14:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\Shortcut::$session is deprecated in APPPATH\Controllers\BaseController.php on line 56.
+ 1 SYSTEMPATH\View\Cell.php(96): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\Common.php(1206): CodeIgniter\View\Cell->render('App\\Controllers\\Shortcut::loadShortcut', [], 0, 'AppControllersShortcutloadShortcut40cd750bba9870f18aada2478b24840a')
+ 3 APPPATH\Views\partials\topbar.php(157): view_cell('App\\Controllers\\Shortcut::loadShortcut')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\topbar.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/topbar', null, true)
+ 7 APPPATH\Views\partials\menu.php(1): CodeIgniter\View\View->include('partials/topbar')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\partials\\menu.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('partials/menu', null, true)
+11 APPPATH\Views\report\statistik_umur.php(11): CodeIgniter\View\View->include('partials/menu')
+12 SYSTEMPATH\View\View.php(228): include('C:\\2023project\\aparus3\\app\\Views\\report\\statistik_umur.php')
+13 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('report/statistik_umur', [], true)
+15 APPPATH\Controllers\ReportHunian.php(116): view('report/statistik_umur', [...])
+16 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ReportHunian->statistikUmur()
+17 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportHunian))
+18 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\2023project\\aparus3\\public\\index.php')
+INFO - 2025-02-19 19:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-19 19:14:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -101,4 +101,32 @@ class ReportHunian extends BaseController
 
         return view('report/statistik_gender', $data);
     }
+
+    public function statistikUmur()
+    {
+        $rusun_id = $this->request->getGet('rusun');
+
+        $data = [
+            'title' => 'Statistik Berdasarkan Umur',
+            'statistik' => $this->reportModel->getStatistikUmur($rusun_id),
+            'rusun' => $this->rusun->select('rusun_id, rusun_nama')->findAll(),
+            'selected_rusun' => $rusun_id
+        ];
+
+        return view('report/statistik_umur', $data);
+    }
+
+    public function statistikKamar()
+    {
+        $rusun_id = $this->request->getGet('rusun');
+
+        $data = [
+            'title' => 'Statistik Kamar',
+            'statistik' => $this->reportModel->getStatistikKamar($rusun_id),
+            'rusun' => $this->rusun->select('rusun_id, rusun_nama')->findAll(),
+            'selected_rusun' => $rusun_id
+        ];
+
+        return view('report/statistik_kamar', $data);
+    }
 }
